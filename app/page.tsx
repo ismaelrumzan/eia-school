@@ -21,7 +21,7 @@ export default function Page() {
   return (
     <Dialog>
       <main className="border-t-[6px] border-[#855247] w-full">
-        <div className="container mx-auto max-w-[1024px]">
+        <div className="container mx-auto max-w-[768px]">
           <div
             id="header"
             className="flex items-center pt-[6px] pb-[11px] px-4 lg:px-0">
@@ -52,7 +52,7 @@ export default function Page() {
               className="object-cover"
             />
           </div>
-          <div id="headline" className="py-[16px] px-4 lg:px-0">
+          <div id="headline" className="py-[16px] px-4 lg:px-0 mx-auto">
             <h1 className="font-bebas text-[20px] sm:text-[26px] text-[#D6B623]">
               Why the New School Project?
             </h1>
@@ -211,7 +211,7 @@ export default function Page() {
             </h2>
             <div className="flex pb-[10px]">
               <div>
-                <div className="relative w-[60px]">
+                <div className="relative w-[50px]">
                   <Image src={term01} alt="term 01" />
                 </div>
               </div>
@@ -225,7 +225,7 @@ export default function Page() {
             </div>
             <div className="flex pb-[10px]">
               <div>
-                <div className="relative w-[60px]">
+                <div className="relative w-[50px]">
                   <Image src={term02} alt="term 02" />
                 </div>
               </div>
@@ -239,7 +239,7 @@ export default function Page() {
             </div>
             <div className="flex pb-[10px]">
               <div>
-                <div className="relative w-[60px]">
+                <div className="relative w-[50px]">
                   <Image src={term03} alt="term 03" />
                 </div>
               </div>
