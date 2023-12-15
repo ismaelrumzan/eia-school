@@ -6,6 +6,15 @@ import Image from "next/image";
 import logo from "../media/eia-logo.png";
 import hero from "../media/hero.png";
 import headlineBottom from "../media/headline-bottom.png";
+import qardTop from "../media/qard-top.png";
+import benefit01 from "../media/benefit-01.png";
+import benefit02 from "../media/benefit-02.png";
+import benefit03 from "../media/benefit-03.png";
+import term01 from "../media/terms-01.png";
+import term02 from "../media/terms-02.png";
+import term03 from "../media/terms-03.png";
+import qardBottom from "../media/qard-bottom.png";
+import footer from "../media/footer.png";
 import { Quote, ArrowRight, Mail } from "lucide-react";
 
 export default function Page() {
@@ -105,15 +114,195 @@ export default function Page() {
             <p className="text-center text-[12px] text-[#31c8ad]">
               Quran 57:11
             </p>
-            <DialogTrigger asChild>
-              <Button className="font-bebas text-[22px] uppercase w-full bg-[#D6B623] my-[16px]">
-                Sign up <ArrowRight className="ml-1 h-5 w-5" />
-              </Button>
-            </DialogTrigger>
+            <div className="full-w flex justify-center">
+              <DialogTrigger asChild>
+                <Button className="font-bebas text-[22px] uppercase w-full bg-[#D6B623] my-[16px] max-w-[350px]">
+                  Sign up <ArrowRight className="ml-1 h-5 w-5" />
+                </Button>
+              </DialogTrigger>
+            </div>
+          </div>
+          <div
+            id="qard-top"
+            className="relative h-[200px] sm:h-[250px] lg:h-[300px]">
+            <Image
+              src={qardTop}
+              alt="Front school"
+              fill={true}
+              className="object-cover"
+            />
+          </div>
+          <div id="benefits" className="py-[16px] px-4 lg:px-0">
+            <h2 className="text-[13px] font-semibold pb-[5px]">
+              Key Benefits of Qard Al-Hasan:
+            </h2>
+            <div className="flex pb-[10px]">
+              <div>
+                <div className="relative w-[60px]">
+                  <Image src={benefit01} alt="benefit 01" />
+                </div>
+              </div>
+              <div className="text-[12px] leading-5 ml-[10px]">
+                <div>
+                  <b>Spiritual Significance:</b>
+                </div>
+                The Holy Qur&apos;an emphasizes the concept of Qard Al-Hasan six
+                times. It is an honored act of devotion and righteousness that
+                promises participants abundant rewards, expiation of sins and
+                forgiveness.
+              </div>
+            </div>
+            <div className="flex pb-[10px]">
+              <div>
+                <div className="relative w-[60px]">
+                  <Image src={benefit02} alt="benefit 02" />
+                </div>
+              </div>
+              <div className="text-[12px] leading-5 ml-[10px]">
+                <div>
+                  <b>Reviving a Sunnah:</b>
+                </div>
+                Be a part of reviving Prophet Muhammad&apos;s (PBUH) practice by
+                giving a loan, fostering community, and supporting Muslim-led
+                projects.
+              </div>
+            </div>
+            <div className="flex pb-[10px]">
+              <div>
+                <div className="relative w-[60px]">
+                  <Image src={benefit03} alt="benefit 03" />
+                </div>
+              </div>
+              <div className="text-[12px] leading-5 ml-[10px]">
+                <div>
+                  <b>Empowering Islamic Initiatives:</b>
+                </div>
+                Your contribution aligns with Islamic financial principles,
+                ensuring our school is built on Halal Funds and avoiding Riba
+                (exploitation/interest). It empowers our community and future
+                generations.
+              </div>
+            </div>
+            <div className="full-w flex justify-center">
+              <DialogTrigger asChild>
+                <Button className="font-bebas text-[22px] uppercase w-full bg-[#D6B623] my-[16px] max-w-[350px]">
+                  Sign up <ArrowRight className="ml-1 h-5 w-5" />
+                </Button>
+              </DialogTrigger>
+            </div>
+          </div>
+          <div
+            id="qard-bottom"
+            className="relative h-[200px] sm:h-[250px] lg:h-[300px]">
+            <Image
+              src={qardBottom}
+              alt="Front school"
+              fill={true}
+              className="object-cover"
+            />
+          </div>
+          <div id="terms" className="py-[16px] px-4 lg:px-0">
+            <h2 className="font-bebas text-[24px] text-center text-[#D6B623]">
+              The Terms
+            </h2>
+            <div className="flex pb-[10px]">
+              <div>
+                <div className="relative w-[60px]">
+                  <Image src={term01} alt="term 01" />
+                </div>
+              </div>
+              <div className="text-[12px] leading-5 ml-[10px]">
+                <div>
+                  <b>Due-on-Demand</b>
+                </div>
+                We commit to a full refund upon demand through a legally binding
+                and confidential contract. This is a money-back guarantee.
+              </div>
+            </div>
+            <div className="flex pb-[10px]">
+              <div>
+                <div className="relative w-[60px]">
+                  <Image src={term02} alt="term 02" />
+                </div>
+              </div>
+              <div className="text-[12px] leading-5 ml-[10px]">
+                <div>
+                  <b>Flexible Payment Options</b>
+                </div>
+                Conveniently contribute via cheque, cash, wire transfer or
+                credit/debit card.
+              </div>
+            </div>
+            <div className="flex pb-[10px]">
+              <div>
+                <div className="relative w-[60px]">
+                  <Image src={term03} alt="term 03" />
+                </div>
+              </div>
+              <div className="text-[12px] leading-5 ml-[10px]">
+                <div>
+                  <b>Payback Method</b>
+                </div>
+                Your money will be returned upon demand in the form of a cheque
+                upon your request.
+              </div>
+            </div>
+            <div className="full-w flex justify-center">
+              <DialogTrigger asChild>
+                <Button className="font-bebas text-[22px] uppercase w-full bg-[#D6B623] my-[16px] max-w-[350px]">
+                  Sign up <ArrowRight className="ml-1 h-5 w-5" />
+                </Button>
+              </DialogTrigger>
+            </div>
+          </div>
+          <div id="shape" className="px-4 lg:px-0 bg-[#2EB774] py-[10px]">
+            <h2 className="font-bebas text-[24px] text-center text-white">
+              LET’S SHAPE A BRIGHTER FUTURE TOGETHER
+            </h2>
+            <p className="text-[13px] leading-5 text-white">
+              <div className="text-center  pb-[5px]">
+                <b>Join the Movement!</b>
+              </div>
+              By joining our movement and participating in Qard Al-Hasan, you
+              embody the best of Islamic principles, practice the Sunnah of our
+              beloved Prophet Muhammad (pbuh), and are contributing to the New
+              School Project for the Edmonton Islamic Academy - Elementary
+              Campus. For the sake of our children and future generations join
+              us in building a great legacy of Islamic education of faith and
+              knowledge! This is Sadaqa Jariya - everlasting bounty and
+              goodness, to those who contribute in this initiative as the
+              knowledge learned and shared is perpetual, insha’ Allah.
+            </p>
+          </div>
+          <div
+            id="footer-img"
+            className="relative h-[200px] sm:h-[250px] lg:h-[300px]">
+            <Image
+              src={footer}
+              alt="Hall"
+              fill={true}
+              className="object-cover"
+            />
+          </div>
+          <div
+            id="footer-contact"
+            className="px-4 lg:px-0 bg-black py-[20px] text-center">
+            <div className="text-white text-[11px]">
+              For comments and questions, email{" "}
+              <Link
+                href="mailto:nsp@islamicacademy.ca"
+                target="blank"
+                className="underline">
+                nsp@islamicacademy.ca
+              </Link>
+            </div>
+            <div className="text-white text-[11px]">
+              Join us in building a legacy of Islamic education and tradition!
+            </div>
           </div>
         </div>
       </main>
-      <DialogContent className="sm:max-w-[425px] bg-slate-50">
+      <DialogContent className="sm:min-w-[625px] bg-slate-50">
         <SubmitForm />
       </DialogContent>
     </Dialog>
