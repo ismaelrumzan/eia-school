@@ -53,10 +53,10 @@ export default function Page() {
             />
           </div>
           <div id="headline" className="py-[16px] px-4 lg:px-0">
-            <h1 className="font-bebas text-[20px] text-[#D6B623]">
+            <h1 className="font-bebas text-[20px] sm:text-[26px] text-[#D6B623]">
               Why the New School Project?
             </h1>
-            <p className="text-[12px] leading-5">
+            <p className="text-[12px] sm:text-[14px] leading-5">
               The Edmonton Islamic Academy (EIA) serves under 1800 students with
               an additional <b>1000 on its waiting list</b>. This reflects the
               rapid growth of the Muslim community in our city currently at
@@ -79,17 +79,17 @@ export default function Page() {
               className="object-cover"
             />
           </div>
-          <div id="contribute" className="py-[16px] px-4 lg:px-0">
-            <h2 className="font-bebas text-[20px] text-center leading-4">
+          <div id="contribute" className="py-[16px] sm:py-[22px] px-4 lg:px-0">
+            <h2 className="font-bebas text-[20px] sm:text-[26px] text-center leading-4">
               CONTRIBUTE THROUGH
             </h2>
-            <h2 className="font-bebas text-[24px] text-center text-[#D6B623]">
+            <h2 className="font-bebas text-[24px] sm:text-[28px] text-center text-[#D6B623]">
               QARD AL-HASSAN
             </h2>
-            <h3 className="text-[12px] text-center uppercase leading-4 font-semibold">
+            <h3 className="text-[12px] sm:text-[15px] text-center uppercase leading-4 font-semibold">
               THE GOOD LOAN
             </h3>
-            <p className="text-[12px] leading-5 pt-[7px]">
+            <p className="text-[12px]  sm:text-[14px] leading-5 pt-[7px]">
               Qard Al-Hasan is a unique Islamic financial term that differs from
               a “traditional” loan; it&apos;s a pious, charitable act deeply
               rooted in the Islamic faith. By giving money via a “good loan”
@@ -98,22 +98,26 @@ export default function Page() {
               between the lender and borrower, sanctioned by Islamic
               best-practices.
             </p>
-            <div className="flex pt-[16px] pb-[5px]">
-              <div className="self-start">
-                <Quote size={20} className="text-[#855247] rotate-180" />
-              </div>
-              <p className="text-[14px] text-center text-[#855247]">
-                Who is it that will lend to Allah a good loan which Allah will
-                multiply many times over for them, and they will have an
-                honorable reward
-              </p>
-              <div className="self-end">
-                <Quote size={20} className="text-[#855247]" />
+            <div className="flex justify-center full-w">
+              <div>
+                <div className="flex pt-[16px] pb-[5px]">
+                  <div className="self-start">
+                    <Quote size={20} className="text-[#855247] rotate-180" />
+                  </div>
+                  <p className="text-[14px] text-center sm:text-[18px] text-[#855247] px-[10px] max-w-[450px]">
+                    Who is it that will lend to Allah a good loan which Allah
+                    will multiply many times over for them, and they will have
+                    an honorable reward
+                  </p>
+                  <div className="self-end">
+                    <Quote size={20} className="text-[#855247]" />
+                  </div>
+                </div>
+                <p className="text-center text-[12px] sm:text-[14px] text-[#31c8ad]">
+                  Quran 57:11
+                </p>
               </div>
             </div>
-            <p className="text-center text-[12px] text-[#31c8ad]">
-              Quran 57:11
-            </p>
             <div className="full-w flex justify-center">
               <DialogTrigger asChild>
                 <Button className="font-bebas text-[22px] uppercase w-full bg-[#D6B623] my-[16px] max-w-[350px]">
@@ -133,7 +137,7 @@ export default function Page() {
             />
           </div>
           <div id="benefits" className="py-[16px] px-4 lg:px-0">
-            <h2 className="text-[13px] font-semibold pb-[5px]">
+            <h2 className="text-[13px] sm:text-[16px] font-semibold pb-[5px]">
               Key Benefits of Qard Al-Hasan:
             </h2>
             <div className="flex pb-[10px]">
@@ -142,7 +146,7 @@ export default function Page() {
                   <Image src={benefit01} alt="benefit 01" />
                 </div>
               </div>
-              <div className="text-[12px] leading-5 ml-[10px]">
+              <div className="text-[12px] sm:text-[14px] leading-5 ml-[10px]">
                 <div>
                   <b>Spiritual Significance:</b>
                 </div>
@@ -158,7 +162,7 @@ export default function Page() {
                   <Image src={benefit02} alt="benefit 02" />
                 </div>
               </div>
-              <div className="text-[12px] leading-5 ml-[10px]">
+              <div className="text-[12px] sm:text-[14px] leading-5 ml-[10px]">
                 <div>
                   <b>Reviving a Sunnah:</b>
                 </div>
@@ -173,7 +177,7 @@ export default function Page() {
                   <Image src={benefit03} alt="benefit 03" />
                 </div>
               </div>
-              <div className="text-[12px] leading-5 ml-[10px]">
+              <div className="text-[12px] sm:text-[14px] leading-5 ml-[10px]">
                 <div>
                   <b>Empowering Islamic Initiatives:</b>
                 </div>
@@ -202,7 +206,7 @@ export default function Page() {
             />
           </div>
           <div id="terms" className="py-[16px] px-4 lg:px-0">
-            <h2 className="font-bebas text-[24px] text-center text-[#D6B623]">
+            <h2 className="font-bebas text-[24px] sm:text-[28px] text-center text-[#D6B623]">
               The Terms
             </h2>
             <div className="flex pb-[10px]">
@@ -211,7 +215,7 @@ export default function Page() {
                   <Image src={term01} alt="term 01" />
                 </div>
               </div>
-              <div className="text-[12px] leading-5 ml-[10px]">
+              <div className="text-[12px] sm:text-[14px] leading-5 ml-[10px]">
                 <div>
                   <b>Due-on-Demand</b>
                 </div>
@@ -225,7 +229,7 @@ export default function Page() {
                   <Image src={term02} alt="term 02" />
                 </div>
               </div>
-              <div className="text-[12px] leading-5 ml-[10px]">
+              <div className="text-[12px] sm:text-[14px] leading-5 ml-[10px]">
                 <div>
                   <b>Flexible Payment Options</b>
                 </div>
@@ -239,7 +243,7 @@ export default function Page() {
                   <Image src={term03} alt="term 03" />
                 </div>
               </div>
-              <div className="text-[12px] leading-5 ml-[10px]">
+              <div className="text-[12px] sm:text-[14px] leading-5 ml-[10px]">
                 <div>
                   <b>Payback Method</b>
                 </div>
@@ -256,11 +260,11 @@ export default function Page() {
             </div>
           </div>
           <div id="shape" className="px-4 lg:px-0 bg-[#2EB774] py-[10px]">
-            <h2 className="font-bebas text-[24px] text-center text-white">
+            <h2 className="font-bebas text-[24px] sm:text-[28px] text-center text-white">
               LET’S SHAPE A BRIGHTER FUTURE TOGETHER
             </h2>
-            <p className="text-[13px] leading-5 text-white">
-              <div className="text-center  pb-[5px]">
+            <p className="text-[13px] sm:text-[15px] leading-5 text-white">
+              <div className="text-center pb-[5px]">
                 <b>Join the Movement!</b>
               </div>
               By joining our movement and participating in Qard Al-Hasan, you
@@ -287,7 +291,7 @@ export default function Page() {
           <div
             id="footer-contact"
             className="px-4 lg:px-0 bg-black py-[20px] text-center">
-            <div className="text-white text-[11px]">
+            <div className="text-white text-[11px] sm:text-[13px]">
               For comments and questions, email{" "}
               <Link
                 href="mailto:nsp@islamicacademy.ca"
@@ -296,7 +300,7 @@ export default function Page() {
                 nsp@islamicacademy.ca
               </Link>
             </div>
-            <div className="text-white text-[11px]">
+            <div className="text-white text-[11px] sm:text-[13px]">
               Join us in building a legacy of Islamic education and tradition!
             </div>
           </div>
