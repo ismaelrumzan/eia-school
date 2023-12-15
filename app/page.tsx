@@ -45,9 +45,9 @@ export default function Home() {
             100,000 people. To meet this pressing demand, the New School Project
             aims to provide essential services and nurture the emergence of
             courageous, faith-driven leaders. Your support is not just about
-            constructing a school; it's an investment in shaping a future where
-            our children and families thrive in an environment aligned with our
-            Islamic values. Join us on this transformative journey!
+            constructing a school; it&apos;s an investment in shaping a future
+            where our children and families thrive in an environment aligned
+            with our Islamic values. Join us on this transformative journey!
           </p>
         </div>
         <div
