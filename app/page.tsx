@@ -259,7 +259,7 @@ export default function Page() {
               </DialogTrigger>
             </div>
           </div>
-          <div id="shape" className="px-4 lg:px-0 bg-[#2EB774] py-[10px]">
+          <div id="shape" className="px-4 bg-[#2EB774] py-[10px]">
             <h2 className="font-bebas text-[24px] sm:text-[28px] text-center text-white">
               LET’S SHAPE A BRIGHTER FUTURE TOGETHER
             </h2>
