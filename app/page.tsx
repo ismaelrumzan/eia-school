@@ -20,11 +20,11 @@ import { Quote, ArrowRight, Mail } from "lucide-react";
 export default function Page() {
   return (
     <Dialog>
-      <main className="border-t-[6px] border-[#855247] w-full">
-        <div className="container mx-auto max-w-[768px]">
+      <main className="border-t-[6px] border-[#855247] w-full bg-[#f5f5f5]">
+        <div className="container mx-auto max-w-[768px] bg-white">
           <div
             id="header"
-            className="flex items-center pt-[6px] pb-[11px] px-4 lg:px-0">
+            className="flex items-center pt-[6px] pb-[11px] px-4">
             <div className="flex-grow">
               <Image
                 src={logo}
@@ -52,7 +52,7 @@ export default function Page() {
               className="object-cover"
             />
           </div>
-          <div id="headline" className="py-[16px] px-4 lg:px-0 mx-auto">
+          <div id="headline" className="py-[16px] px-4 mx-auto">
             <h1 className="font-bebas text-[20px] sm:text-[26px] text-[#D6B623]">
               Why the New School Project?
             </h1>
@@ -79,7 +79,7 @@ export default function Page() {
               className="object-cover"
             />
           </div>
-          <div id="contribute" className="py-[16px] sm:py-[22px] px-4 lg:px-0">
+          <div id="contribute" className="py-[16px] sm:py-[22px] px-4">
             <h2 className="font-bebas text-[20px] sm:text-[26px] text-center leading-4">
               CONTRIBUTE THROUGH
             </h2>
@@ -136,7 +136,7 @@ export default function Page() {
               className="object-cover"
             />
           </div>
-          <div id="benefits" className="py-[16px] px-4 lg:px-0">
+          <div id="benefits" className="py-[16px] px-4">
             <h2 className="text-[13px] sm:text-[16px] font-semibold pb-[5px]">
               Key Benefits of Qard Al-Hasan:
             </h2>
@@ -205,7 +205,7 @@ export default function Page() {
               className="object-cover"
             />
           </div>
-          <div id="terms" className="py-[16px] px-4 lg:px-0">
+          <div id="terms" className="py-[16px] px-4">
             <h2 className="font-bebas text-[24px] sm:text-[28px] text-center text-[#D6B623]">
               The Terms
             </h2>
@@ -290,7 +290,7 @@ export default function Page() {
           </div>
           <div
             id="footer-contact"
-            className="px-4 lg:px-0 bg-black py-[20px] text-center">
+            className="px-4 bg-black py-[20px] text-center">
             <div className="text-white text-[11px] sm:text-[13px]">
               For comments and questions, email{" "}
               <Link
