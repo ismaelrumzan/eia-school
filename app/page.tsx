@@ -26,7 +26,7 @@ export default function Page() {
           Why the New School Project?
         </h1>
         <p className="text-[12px] sm:text-[14px] leading-5">
-          The Edmonton Islamic Academy (EIA) serves under 1800 students with an
+          The Edmonton Islamic Academy (EIA) serves under 2070 students with an
           additional <b>1000 on its waiting list</b>. This reflects the rapid
           growth of the Muslim community in our city currently at 100,000
           people. To meet this pressing demand, the New School Project aims to
