@@ -1,3 +1,4 @@
+import Script from "next/script";
 import type { Metadata } from "next";
 import { Bebas_Neue } from "next/font/google";
 import "./globals.css";
@@ -21,6 +22,10 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${bebas.variable}`}>
       <body className="font-caecilia">{children}</body>
+      <Script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-XQ0N2GP5QJ"
+      />
     </html>
   );
 }
