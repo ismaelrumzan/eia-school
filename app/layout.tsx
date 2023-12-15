@@ -23,7 +23,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${bebas.variable}`}>
-      <body className="font-caecilia">{children}</body>
+      <body className="font-caecilia" suppressHydrationWarning>
+        {children}
+      </body>
       <Script
         async
         src="https://www.googletagmanager.com/gtag/js?id=G-XQ0N2GP5QJ"

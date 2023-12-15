@@ -1,26 +1,22 @@
 import { Button } from "@/components/ui/button";
+import { Suspense } from "react";
 import { SubmitForm } from "@/components/ui/submit-form";
 import Link from "next/link";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import Image from "next/image";
 import logo from "../media/eia-logo.png";
-import hero from "../media/hero.png";
-import headlineBottom from "../media/headline-bottom.png";
-import qardTop from "../media/qard-top.png";
 import benefit01 from "../media/benefit-01.png";
 import benefit02 from "../media/benefit-02.png";
 import benefit03 from "../media/benefit-03.png";
 import term01 from "../media/terms-01.png";
 import term02 from "../media/terms-02.png";
 import term03 from "../media/terms-03.png";
-import qardBottom from "../media/qard-bottom.png";
-import footer from "../media/footer.png";
 import { Quote, ArrowRight, Mail } from "lucide-react";
 
 export default function Page() {
   return (
-    <Dialog>
-      <main className="border-t-[6px] border-[#855247] w-full bg-[#f5f5f5]">
+    <main className="border-t-[6px] border-[#855247] w-full bg-[#f5f5f5]">
+      <Dialog>
         <div className="container mx-auto max-w-[768px] bg-white">
           <div
             id="header"
@@ -46,7 +42,7 @@ export default function Page() {
             id="hero"
             className="relative h-[200px] sm:h-[250px] lg:h-[350px]">
             <Image
-              src={hero}
+              src="/hero.png"
               alt="School birds view"
               fill={true}
               className="object-cover"
@@ -73,7 +69,7 @@ export default function Page() {
             id="headline-bottom"
             className="relative h-[150px] sm:h-[200px] lg:h-[300px]">
             <Image
-              src={headlineBottom}
+              src="/headline-bottom.png"
               alt="Front school"
               fill={true}
               className="object-cover"
@@ -130,7 +126,7 @@ export default function Page() {
             id="qard-top"
             className="relative h-[200px] sm:h-[250px] lg:h-[300px]">
             <Image
-              src={qardTop}
+              src="/qard-top.png"
               alt="Front school"
               fill={true}
               className="object-cover"
@@ -199,7 +195,7 @@ export default function Page() {
             id="qard-bottom"
             className="relative h-[200px] sm:h-[250px] lg:h-[300px]">
             <Image
-              src={qardBottom}
+              src="/qard-bottom.png"
               alt="Front school"
               fill={true}
               className="object-cover"
@@ -282,7 +278,7 @@ export default function Page() {
             id="footer-img"
             className="relative h-[200px] sm:h-[250px] lg:h-[300px]">
             <Image
-              src={footer}
+              src="/footer.png"
               alt="Hall"
               fill={true}
               className="object-cover"
@@ -305,10 +301,12 @@ export default function Page() {
             </div>
           </div>
         </div>
-      </main>
-      <DialogContent className="sm:min-w-[625px] bg-slate-50">
-        <SubmitForm />
-      </DialogContent>
-    </Dialog>
+        <Suspense fallback={<p>Loading dialog...</p>}>
+          <DialogContent className="sm:min-w-[625px] bg-slate-50">
+            <SubmitForm />
+          </DialogContent>
+        </Suspense>
+      </Dialog>
+    </main>
   );
 }
