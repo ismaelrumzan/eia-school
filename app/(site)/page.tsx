@@ -2,12 +2,12 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import Image from "next/image";
 
-import benefit01 from "../media/benefit-01.png";
-import benefit02 from "../media/benefit-02.png";
-import benefit03 from "../media/benefit-03.png";
-import term01 from "../media/terms-01.png";
-import term02 from "../media/terms-02.png";
-import term03 from "../media/terms-03.png";
+import benefit01 from "@/media/benefit-01.png";
+import benefit02 from "@/media/benefit-02.png";
+import benefit03 from "@/media/benefit-03.png";
+import term01 from "@/media/terms-01.png";
+import term02 from "@/media/terms-02.png";
+import term03 from "@/media/terms-03.png";
 import { Quote, ArrowRight } from "lucide-react";
 
 export default function Page() {
