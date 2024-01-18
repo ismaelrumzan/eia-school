@@ -1,4 +1,4 @@
-import Script from "next/script";
+import { DonationForm } from "@/components/ui/donation-form";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
@@ -12,14 +12,7 @@ export default function Page() {
           <Link href="/">Back to Home</Link>
         </Button>
       </div>
-      <div
-        id="blackbaud-donation-form_463ff1d3-3592-4ac2-9aa1-5b86f85b4ca6"
-        className="flex justify-center"></div>
-      <Script src="https://sky.blackbaudcdn.net/static/donor-form-loader/2/main.js"></Script>
-      <Script id="donation-form">
-        {`BBDonorFormLoader.newBlackbaudDonationFormZoned('renxt','p-MmjbOKJ57ki31wFtZ537jQ',
-        '463ff1d3-3592-4ac2-9aa1-5b86f85b4ca6','can')`}
-      </Script>
+      <DonationForm />
     </>
   );
 }
