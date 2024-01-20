@@ -2,6 +2,7 @@ import Script from "next/script";
 import Link from "next/link";
 import Image from "next/image";
 import { Flowbite } from "flowbite-react";
+import { ArrowRight } from "lucide-react";
 import {
   Navbar,
   NavbarBrand,
@@ -40,8 +41,11 @@ export default function SiteLayout({
                 />
               </NavbarBrand>
               <div className="flex md:order-2 gap-2">
-                <NavButton href="/donate">Donate</NavButton>
-                <NavbarToggle />
+                <NavButton href="/donate">
+                  Donate
+                  <ArrowRight />
+                </NavButton>
+                <NavbarToggle className="text-[#094931]" />
               </div>
               <NavbarCollapse>
                 <NavbarLink href="/vision">Vision</NavbarLink>
