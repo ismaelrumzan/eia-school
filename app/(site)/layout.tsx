@@ -1,7 +1,16 @@
 import Script from "next/script";
 import Link from "next/link";
 import Image from "next/image";
-import { Mail } from "lucide-react";
+import { Flowbite } from "flowbite-react";
+import {
+  Navbar,
+  NavbarBrand,
+  NavbarCollapse,
+  NavbarLink,
+  NavbarToggle,
+} from "flowbite-react";
+import { eiaTheme } from "@/components/ui/flowbite/theme";
+import { NavButton } from "@/components/ui/buttons/nav-button";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
@@ -19,30 +28,28 @@ export default function SiteLayout({
 }) {
   return (
     <>
-      <main className="border-t-[6px] border-[#855247] w-full bg-[#f5f5f5]">
+      <main className="border-t-[6px] border-[#094931] w-full bg-[#f5f5f5]">
         <div className="container mx-auto max-w-[768px] bg-white">
-          <div
-            id="header"
-            className="flex items-center pt-[6px] pb-[11px] px-4">
-            <div className="flex-grow">
-              <Link href="/">
+          <Flowbite theme={{ theme: eiaTheme }}>
+            <Navbar fluid rounded>
+              <NavbarBrand as={Link} href="/">
                 <Image
                   src={logo}
                   alt="EIA"
                   className="max-w-[66px] sm:max-w-[100px]"
                 />
-              </Link>
-            </div>
-            <div className="flex flex-col items-end">
-              <div className="font-bebas text-[18px]">
-                JOIN THE JOURNEY THROUGH OUR{" "}
-                <span className="text-[#855247]">NEXT FIRST</span>
+              </NavbarBrand>
+              <div className="flex md:order-2 gap-2">
+                <NavButton href="/donate">Donate</NavButton>
+                <NavbarToggle />
               </div>
-              <Link href="mailto:nsp@islamicacademy.ca" target="blank">
-                <Mail className="h-6 w-6 text-black-500" />
-              </Link>
-            </div>
-          </div>
+              <NavbarCollapse>
+                <NavbarLink href="/vision">Vision</NavbarLink>
+                <NavbarLink href="/donations">Donations</NavbarLink>
+                <NavbarLink href="/phases">Phases & Timeline</NavbarLink>
+              </NavbarCollapse>
+            </Navbar>
+          </Flowbite>
           {children}
           <div
             id="footer-contact"
