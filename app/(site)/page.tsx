@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import Image from "next/image";
-
+import { Carousel } from "flowbite-react";
 import benefit01 from "@/media/benefit-01.png";
 import benefit02 from "@/media/benefit-02.png";
 import benefit03 from "@/media/benefit-03.png";
@@ -13,13 +13,59 @@ import { Quote, ArrowRight } from "lucide-react";
 export default function Page() {
   return (
     <>
-      <div id="hero" className="relative h-[200px] sm:h-[250px] lg:h-[350px]">
-        <Image
-          src="/hero.png"
-          alt="School birds view"
-          fill={true}
-          className="object-cover"
-        />
+      <div className="h-56 sm:h-64 xl:h-80 2xl:h-96">
+        <Carousel>
+          <div
+            id="hero-01"
+            className="relative h-[200px] sm:h-[250px] lg:h-[350px]">
+            <Image
+              src="/gallery/exterior-01.jpg"
+              alt="School birds view"
+              fill={true}
+              className="object-cover"
+            />
+          </div>
+          <div
+            id="hero-02"
+            className="relative h-[200px] sm:h-[250px] lg:h-[350px]">
+            <Image
+              src="/gallery/exterior-02.png"
+              alt="School birds view"
+              fill={true}
+              className="object-cover"
+            />
+          </div>
+          <div
+            id="hero-03"
+            className="relative h-[200px] sm:h-[250px] lg:h-[350px]">
+            <Image
+              src="/gallery/interior-01.png"
+              alt="School birds view"
+              fill={true}
+              className="object-cover"
+            />
+          </div>
+          <div
+            id="hero-03"
+            className="relative h-[200px] sm:h-[250px] lg:h-[350px]">
+            <Image
+              src="/gallery/exterior-03.png"
+              alt="School birds view"
+              fill={true}
+              className="object-cover"
+            />
+          </div>
+          <div
+            id="hero-03"
+            className="relative h-[200px] sm:h-[250px] lg:h-[350px]">
+            <Image
+              src="/gallery/interior-02.png"
+              alt="School birds view"
+              fill={true}
+              className="object-cover"
+            />
+          </div>
+        </Carousel>
       </div>
       <div id="headline" className="py-[16px] px-4 mx-auto">
         <h1 className="font-bebas text-[20px] sm:text-[26px] text-[#D6B623]">
