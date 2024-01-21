@@ -14,62 +14,23 @@ import term03 from "@/media/terms-03.png";
 import { Quote, ArrowRight } from "lucide-react";
 import { CTAButton } from "@/components/ui/buttons/cta-button";
 import { AboutItem } from "@/components/ui/about-item";
+import { CarouselItem } from "@/components/ui/carousel-item";
 
 export default function Page() {
   return (
     <>
       <div className="h-56 sm:h-64 xl:h-80 2xl:h-96">
         <Carousel slideInterval={1500} pauseOnHover>
-          <div
-            id="hero-01"
-            className="relative h-[200px] sm:h-[250px] lg:h-[350px]">
-            <Image
-              src="/gallery/exterior-01.jpg"
-              alt="School birds view"
-              fill={true}
-              className="object-cover"
-            />
-          </div>
-          <div
-            id="hero-02"
-            className="relative h-[200px] sm:h-[250px] lg:h-[350px]">
-            <Image
-              src="/gallery/exterior-02.png"
-              alt="School birds view"
-              fill={true}
-              className="object-cover"
-            />
-          </div>
-          <div
-            id="hero-03"
-            className="relative h-[200px] sm:h-[250px] lg:h-[350px]">
-            <Image
-              src="/gallery/interior-01.png"
-              alt="School birds view"
-              fill={true}
-              className="object-cover"
-            />
-          </div>
-          <div
-            id="hero-03"
-            className="relative h-[200px] sm:h-[250px] lg:h-[350px]">
-            <Image
-              src="/gallery/exterior-03.png"
-              alt="School birds view"
-              fill={true}
-              className="object-cover"
-            />
-          </div>
-          <div
-            id="hero-03"
-            className="relative h-[200px] sm:h-[250px] lg:h-[350px]">
-            <Image
-              src="/gallery/interior-02.png"
-              alt="School birds view"
-              fill={true}
-              className="object-cover"
-            />
-          </div>
+          <CarouselItem src="/gallery/exterior-01.jpg" text="" />
+          <CarouselItem src="/gallery/exterior-02.jpg" text="" />
+          <CarouselItem src="/gallery/interior-01.jpg" text="" />
+          <CarouselItem src="/gallery/exterior-03.jpg" text="" />
+          <CarouselItem src="/gallery/interior-02.jpg" text="" />
+          <CarouselItem src="/gallery/exterior-04.jpg" text="" />
+          <CarouselItem src="/gallery/interior-03.jpg" text="" />
+          <CarouselItem src="/gallery/exterior-05.jpg" text="" />
+          <CarouselItem src="/gallery/exterior-06.jpg" text="" />
+          <CarouselItem src="/gallery/exterior-07.jpg" text="" />
         </Carousel>
       </div>
       <div className="flex flex-col gap-2 p-2">
