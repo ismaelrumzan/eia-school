@@ -8,7 +8,14 @@ export function CarouselItem({
 }): JSX.Element {
   return (
     <div className="relative h-[200px] sm:h-[250px] lg:h-[350px]">
-      <Image src={src} alt={text} fill={true} className="object-cover" />
+      <Image
+        quality={75}
+        priority
+        src={src}
+        alt={text}
+        fill={true}
+        className="object-cover"
+      />
     </div>
   );
 }
