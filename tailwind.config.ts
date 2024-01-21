@@ -22,6 +22,10 @@ const config: Config = {
       bebas: ["var(--font-bebas)"],
     },
   },
-  plugins: [require("tailwindcss-animate"), require("flowbite/plugin")],
+  plugins: [
+    require("tailwindcss-animate"),
+    require("flowbite/plugin"),
+    require("@tailwindcss/typography"),
+  ],
 };
 export default config;
