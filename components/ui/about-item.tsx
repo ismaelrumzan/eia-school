@@ -8,7 +8,7 @@ export function AboutItem({
 }): JSX.Element {
   return (
     <div>
-      <div className="relative h-[75px]">
+      <div className="relative h-[65px]">
         <Image src={src} alt={text} fill={true} className="object-contain" />
       </div>
       <p className="text-center text-sm">{text}</p>

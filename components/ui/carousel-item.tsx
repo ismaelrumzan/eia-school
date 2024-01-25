@@ -7,7 +7,7 @@ export function CarouselItem({
   text: string;
 }): JSX.Element {
   return (
-    <div className="relative h-[200px] sm:h-[250px] lg:h-[350px]">
+    <div className="relative h-[235px] sm:h-[350px]">
       <Image
         quality={75}
         priority

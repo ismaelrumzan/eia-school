@@ -57,7 +57,7 @@ export default function SiteLayout({
           {children}
           <div
             id="footer-contact"
-            className="px-4 bg-black py-[20px] text-center">
+            className="px-4 bg-[#094931] py-[20px] text-center border-b-[6px] border-[#BDAA65]">
             <div className="text-white text-[11px] sm:text-[13px]">
               For comments and questions, email{" "}
               <Link
@@ -66,9 +66,6 @@ export default function SiteLayout({
                 className="underline">
                 nsp@islamicacademy.ca
               </Link>
-            </div>
-            <div className="text-white text-[11px] sm:text-[13px]">
-              Join us in building a legacy of Islamic education and tradition!
             </div>
           </div>
         </div>
