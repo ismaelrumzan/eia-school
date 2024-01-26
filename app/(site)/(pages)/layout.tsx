@@ -3,5 +3,5 @@ export default function PageLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return <div className="p-3">{children}</div>;
+  return <div className="p-2 sm:p-3">{children}</div>;
 }

@@ -36,16 +36,16 @@ export default function Page() {
         <H1 className="text-center">About the project</H1>
         <H2 className="text-center">Opening 2026 inshaAllah</H2>
         <div className="grid grid-cols-4 gap-4 my-4">
-          <AboutItem src="/about-01.png" text="1600 students" />
-          <AboutItem src="/about-02.png" text="10000 square feet" />
-          <AboutItem src="/about-03.png" text="73 classrooms" />
+          <AboutItem src="/about-01.png" text="1700+ students" />
+          <AboutItem src="/about-02.png" text="70,000+ square feet" />
+          <AboutItem src="/about-03.png" text="76 classrooms" />
           <AboutItem src="/about-04.png" text="2 prayer halls" />
           <AboutItem src="/about-05.png" text="2 gyms" />
           <AboutItem src="/about-06.png" text="Cafeteria" />
           <AboutItem src="/about-07.png" text="5 Learning Centers" />
           <AboutItem src="/about-08.png" text="Playground & field" />
         </div>
-        <CTAButton href="/explore">Help us reach our goal</CTAButton>
+        <CTAButton href="/donate">Help us reach our goal</CTAButton>
       </div>
       <div id="donation" className="py-4 px-2 flex flex-col bg-[#28AE6F]">
         <H1 className="text-center">Join the journey through OUR Next First</H1>
