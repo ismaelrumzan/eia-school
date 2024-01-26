@@ -9,64 +9,16 @@ import { CTAButton } from "@/components/ui/buttons/cta-button";
 import { AboutItem } from "@/components/ui/about-item";
 import { CarouselItem } from "@/components/ui/carousel-item";
 import { DonationItem } from "@/components/ui/donation-item";
+import { homeCarousel } from "@/lib/gallery";
 
 export default function Page() {
   return (
     <>
       <div className="h-[235px] sm:h-[350px] px-2">
         <Carousel slideInterval={3000} pauseOnHover>
-          <CarouselItem
-            src="/gallery/home/EXTERIOR - BIRDS EYE VIEW.jpg"
-            text="Bird's eye view"
-          />
-          <CarouselItem
-            src="/gallery/home/EXTERIOR - FRONT ENTRANCE APPROACH.jpeg"
-            text="Front entrance approach"
-          />
-          <CarouselItem
-            src="/gallery/home/EXTERIOR - FRONT ENTRANCE.jpeg"
-            text=""
-          />
-          <CarouselItem
-            src="/gallery/home/EXTERIOR - NORTH PLAYGROUND BASKETBALL.jpeg"
-            text="North playground"
-          />
-          <CarouselItem
-            src="/gallery/home/EXTERIOR - PRAYER HALL GARDEN.jpeg"
-            text="Prayer hall garden"
-          />
-          <CarouselItem
-            src="/gallery/home/EXTERIOR - SOCCER FIELDS - BIRDSEYE.jpeg"
-            text="Soccer fields"
-          />
-          <CarouselItem
-            src="/gallery/home/INTERIOR - CLASSROOM B.jpeg"
-            text="Classroom"
-          />
-          <CarouselItem
-            src="/gallery/home/INTERIOR - MAIN GYM TO PRAYER HAL.jpeg"
-            text="Main gym to prayer hall"
-          />
-          <CarouselItem
-            src="/gallery/home/INTERIOR - NORTH LEARNING COMMONS D.jpeg"
-            text="North learning commons"
-          />
-          <CarouselItem
-            src="/gallery/home/INTERIOR - PRAYER HALL MIHRAB.jpeg"
-            text="Prayer hall Mihrab"
-          />
-          <CarouselItem
-            src="/gallery/home/INTERIOR - PRAYER HALL.jpeg"
-            text="Prayer hall"
-          />
-          <CarouselItem
-            src="/gallery/home/INTERIOR - SCHOOL COMMONS.jpeg"
-            text="School Commons"
-          />
-          <CarouselItem
-            src="/gallery/home/INTERIOR - SOCIAL STAIR.jpeg"
-            text="Social Stair"
-          />
+          {homeCarousel.map((item) => (
+            <CarouselItem key={item.text} src={item.src} text={item.text} />
+          ))}
         </Carousel>
       </div>
       <div className="flex flex-col px-3 py-2">

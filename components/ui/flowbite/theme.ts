@@ -14,4 +14,10 @@ export const eiaTheme: CustomFlowbiteTheme = {
       },
     },
   },
+  carousel: {
+    scrollContainer: {
+      base: "flex h-full snap-mandatory overflow-y-hidden overflow-x-scroll scroll-smooth rounded-none",
+      snap: "snap-x",
+    },
+  },
 };

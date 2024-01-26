@@ -13,7 +13,7 @@ export function CarouselVideo({
   return (
     <div>
       <LiteYouTubeEmbed id={id} title={text} />
-      <H2_highlight>{text}</H2_highlight>
+      <H2_highlight className="pt-2 text-center">{text}</H2_highlight>
     </div>
   );
 }

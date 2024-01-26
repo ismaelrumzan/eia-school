@@ -16,6 +16,7 @@ import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
 import logo from "@/media/eia-logo.png";
+import { Footer } from "@/components/ui/footer";
 
 export const metadata: Metadata = {
   title: "Edmonton Islamic Academy - Elementary Campus",
@@ -29,10 +30,12 @@ export default function SiteLayout({
 }) {
   return (
     <>
-      <main className="border-t-[6px] border-[#094931] w-full bg-[#f5f5f5]">
+      <main className="w-full bg-[#f5f5f5] min-h-screen pb-[60px] pt-[85px] sm:pt-[116px]">
         <div className="container mx-auto max-w-[768px] bg-white">
           <Flowbite theme={{ theme: eiaTheme }}>
-            <Navbar fluid rounded>
+            <Navbar
+              fluid
+              className="fixed top-0 w-full max-w-[768px] z-50 border-t-[6px] border-[#094931] drop-shadow">
               <NavbarBrand as={Link} href="/">
                 <Image
                   src={logo}
@@ -55,19 +58,7 @@ export default function SiteLayout({
             </Navbar>
           </Flowbite>
           {children}
-          <div
-            id="footer-contact"
-            className="px-4 bg-[#094931] py-[20px] text-center border-b-[6px] border-[#BDAA65]">
-            <div className="text-white text-[11px] sm:text-[13px]">
-              For comments and questions, email{" "}
-              <Link
-                href="mailto:nsp@islamicacademy.ca"
-                target="blank"
-                className="underline">
-                nsp@islamicacademy.ca
-              </Link>
-            </div>
-          </div>
+          <Footer />
         </div>
       </main>
       <Script
