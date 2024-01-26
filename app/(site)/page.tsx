@@ -59,7 +59,7 @@ export default function Page() {
             <DonationItem
               src="/donation-02.png"
               title="Donation Programs"
-              description="Give a good loan through Qard Hasan. Interest-free and rooted in charity."
+              description="Spread your donation and choose your terms."
               button={{
                 text: "Learn more",
                 href: "/contribute/donation-programs",
@@ -67,12 +67,8 @@ export default function Page() {
             />
             <DonationItem
               src="/donation-03.png"
-              title="Donations"
-              description="Give a good loan through Qard Hasan. Interest-free and rooted in charity."
-              button={{
-                text: "Learn more",
-                href: "/contribute#gift-giving",
-              }}
+              title="Gift Giving"
+              description="Coming soon..."
             />
           </Carousel>
         </div>

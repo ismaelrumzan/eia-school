@@ -11,7 +11,7 @@ export function DonationItem({
   src: string;
   title: string;
   description: string;
-  button: { text: string; href: string };
+  button?: { text: string; href: string };
 }): JSX.Element {
   return (
     <div>
@@ -21,7 +21,7 @@ export function DonationItem({
       <div className="flex flex-col gap-3">
         <H2_light className="text-center">{title}</H2_light>
         <p className="text-sm text-center">{description}</p>
-        <CTAButton href={button.href}>{button.text}</CTAButton>
+        {button && <CTAButton href={button.href}>{button.text}</CTAButton>}
       </div>
     </div>
   );
