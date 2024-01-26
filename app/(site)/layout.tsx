@@ -52,8 +52,13 @@ export default function SiteLayout({
               </div>
               <NavbarCollapse>
                 <NavbarLink href="/vision">Vision</NavbarLink>
-                <NavbarLink href="/donations">Donations</NavbarLink>
-                <NavbarLink href="/phases">Phases & Timeline</NavbarLink>
+                <NavbarLink href="/explore">Explore</NavbarLink>
+                <NavbarLink href="/contribute/qard-hasan">
+                  Qard Hasan
+                </NavbarLink>
+                <NavbarLink href="/contribute/donation-programs">
+                  Donations
+                </NavbarLink>
               </NavbarCollapse>
             </Navbar>
           </Flowbite>

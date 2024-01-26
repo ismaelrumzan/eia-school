@@ -1,4 +1,4 @@
-export function H2({
+export function H3({
   children,
   className,
 }: {
@@ -7,14 +7,14 @@ export function H2({
 }): JSX.Element {
   return (
     <div className={`prose ${className}`}>
-      <h2 className="capitalize text-[#004830] text-[20px] pt-1 mb-0 mt-0">
+      <h3 className="capitalize font-semibold text-black text-[16px] pt-1 mb-0 mt-0">
         {children}
-      </h2>
+      </h3>
     </div>
   );
 }
 
-export function H2_light({
+export function H3_light({
   children,
   className,
 }: {
@@ -23,7 +23,7 @@ export function H2_light({
 }): JSX.Element {
   return (
     <div className={`prose ${className}`}>
-      <h2 className="capitalize text-white text-[20px] pt-1 mb-0 mt-0">
+      <h2 className="capitalize font-semibold text-white text-[16px] pt-1 mb-0 mt-0">
         {children}
       </h2>
     </div>

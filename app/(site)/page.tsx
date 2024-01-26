@@ -1,5 +1,3 @@
-import { Button } from "@/components/ui/button";
-import Link from "next/link";
 import Image from "next/image";
 import { Carousel } from "flowbite-react";
 import { H1, H1_light } from "@/components/ui/typography/h1";
@@ -56,19 +54,25 @@ export default function Page() {
               src="/donation-01.png"
               title="Qard Hasan"
               description="Give a good loan through Qard Hasan. Interest-free and rooted in charity."
-              button={{ text: "Learn more", href: "/qard-hassan" }}
+              button={{ text: "Learn more", href: "/contribute/qard-hasan" }}
             />
             <DonationItem
               src="/donation-02.png"
               title="Donation Programs"
               description="Give a good loan through Qard Hasan. Interest-free and rooted in charity."
-              button={{ text: "Learn more", href: "/qard-hassan" }}
+              button={{
+                text: "Learn more",
+                href: "/contribute#donation-programs",
+              }}
             />
             <DonationItem
               src="/donation-03.png"
               title="Donations"
               description="Give a good loan through Qard Hasan. Interest-free and rooted in charity."
-              button={{ text: "Learn more", href: "/qard-hassan" }}
+              button={{
+                text: "Learn more",
+                href: "/contribute#gift-giving",
+              }}
             />
           </Carousel>
         </div>
