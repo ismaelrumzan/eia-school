@@ -62,7 +62,7 @@ export default function Page() {
               description="Give a good loan through Qard Hasan. Interest-free and rooted in charity."
               button={{
                 text: "Learn more",
-                href: "/contribute#donation-programs",
+                href: "/contribute/donation-programs",
               }}
             />
             <DonationItem

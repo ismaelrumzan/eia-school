@@ -1,6 +1,5 @@
 import { H1 } from "@/components/ui/typography/h1";
 import { H2 } from "@/components/ui/typography/h2";
-import { H3 } from "@/components/ui/typography/h3";
 import { CTAButton } from "@/components/ui/buttons/cta-button";
 import { Quote } from "lucide-react";
 
@@ -8,9 +7,7 @@ export default function Page() {
   return (
     <>
       <H1>Qard Hasan</H1>
-      <H2 className="py-2" id="qard-hasan">
-        The Good Loan
-      </H2>
+      <H2 className="py-2">The Good Loan</H2>
       <div className="flex justify-center full-w mb-3">
         <div>
           <div className="flex pt-[16px] pb-[5px]">
@@ -46,8 +43,8 @@ export default function Page() {
       <H2>Rewarding benefits</H2>
       <ol className="prose list-decimal pl-4 pr-2">
         <li>
-          The Qur'an emphasizes Qard Hasan (6 times), promising abundant rewards
-          and forgiveness for those contributing to a charitable cause
+          The Qur&apos;an emphasizes Qard Hasan (6 times), promising abundant
+          rewards and forgiveness for those contributing to a charitable cause
         </li>
         <li>
           Participate in reviving a practice of Prophet Muhammad (PBUH) by

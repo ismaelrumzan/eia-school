@@ -8,7 +8,7 @@ export function CarouselItem({
 }: {
   src: string;
   text: string;
-  showText: boolean;
+  showText?: boolean;
 }): JSX.Element {
   return (
     <div>

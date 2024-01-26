@@ -30,7 +30,7 @@ export default function SiteLayout({
 }) {
   return (
     <>
-      <main className="w-full bg-[#f5f5f5] min-h-screen pb-[60px] pt-[85px] sm:pt-[116px]">
+      <main className="w-full bg-white sm:bg-[#f5f5f5] min-h-screen pb-[60px] pt-[85px] sm:pt-[116px]">
         <div className="container mx-auto max-w-[768px] bg-white">
           <Flowbite theme={{ theme: eiaTheme }}>
             <Navbar
