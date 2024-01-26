@@ -20,8 +20,12 @@ export function DonationItem({
       </div>
       <div className="flex flex-col gap-3">
         <H2_light className="text-center">{title}</H2_light>
-        <p className="text-sm text-center">{description}</p>
-        {button && <CTAButton href={button.href}>{button.text}</CTAButton>}
+        <p className="text-sm sm:text-base text-center">{description}</p>
+        {button && (
+          <div className="flex justify-center px-3 sm:px-0">
+            <CTAButton href={button.href}>{button.text}</CTAButton>
+          </div>
+        )}
       </div>
     </div>
   );

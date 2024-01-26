@@ -8,7 +8,7 @@ export default function Page() {
     <>
       <H1>Qard Hasan</H1>
       <H2 className="py-2">The Good Loan</H2>
-      <section className="prose">
+      <section className="prose max-w-none">
         <div className="flex justify-center full-w mb-3">
           <div>
             <div className="flex pt-[16px] pb-[5px]">
@@ -39,12 +39,12 @@ export default function Page() {
           faith-centric future.
         </p>
       </section>
-      <div className="flex flex-col py-3">
+      <div className="flex justify-center px-3 sm:px-0 mb-3">
         <CTAButton href="/qard-hassan">Sign up for qard hasan</CTAButton>
       </div>
-      <section className="prose">
+      <section className="prose max-w-none">
         <H2>Rewarding benefits</H2>
-        <ol className="prose list-decimal">
+        <ol className="list-decimal">
           <li>
             The Qur&apos;an emphasizes Qard Hasan (6 times), promising abundant
             rewards and forgiveness for those contributing to a charitable cause
@@ -62,7 +62,7 @@ export default function Page() {
           </li>
         </ol>
         <H2>Contract terms</H2>
-        <ul className="prose list-disc">
+        <ul className="list-disc">
           <li>
             Money-back Guarantee - We commit to a full refund upon demand
             through a legally binding and confidential contract
@@ -77,7 +77,7 @@ export default function Page() {
           </li>
         </ul>
       </section>
-      <div className="flex flex-col py-3">
+      <div className="flex justify-center px-3 sm:px-0 mb-3">
         <CTAButton href="/qard-hassan">Sign up for qard hasan</CTAButton>
       </div>
     </>

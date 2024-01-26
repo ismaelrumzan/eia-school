@@ -8,7 +8,7 @@ export default function Page() {
       <H1>Design Philosophy and Vision</H1>
       <H2 className="pt-2">A design that expresses Islamic ideals</H2>
       <H3>Supporting Islamic education deeply</H3>
-      <section className="prose">
+      <section className="prose max-w-none">
         <p>
           In Islam the vision of Paradise is imagined and aspired to in Qur’anic
           descriptions. For over a millennia Muslims all over the world have

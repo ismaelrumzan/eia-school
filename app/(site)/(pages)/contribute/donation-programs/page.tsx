@@ -7,8 +7,8 @@ export default function Page() {
     <>
       <H1>Monthly donation programs</H1>
       <H2>Spread your donation over 4 years or all at once</H2>
-      <section className="prose">
-        <ul className="prose list-disc">
+      <section className="prose max-w-none">
+        <ul className="list-disc">
           <li>You choose your terms</li>
           <li>
             76 Rooms need to be built, that are listed as $200,000 per room that
@@ -20,7 +20,7 @@ export default function Page() {
           </li>
         </ul>
       </section>
-      <div className="flex flex-col py-3">
+      <div className="flex justify-center px-3 sm:px-0 mb-3">
         <CTAButton href="/donate">Sign up</CTAButton>
       </div>
     </>

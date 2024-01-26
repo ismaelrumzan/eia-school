@@ -14,7 +14,7 @@ export function CTAButton({
     <Button
       disabled={disabled}
       asChild
-      className="font-bebas text-[#094931] text-[20px] uppercase bg-[#C6BB79] hover:bg-[#DED6A5]">
+      className="font-bebas text-[#094931] text-[20px] uppercase bg-[#C6BB79] hover:bg-[#DED6A5] w-full sm:w-1/3">
       <Link href={href}>{children}</Link>
     </Button>
   );
