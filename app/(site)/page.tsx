@@ -1,42 +1,37 @@
-Suspense;
 import Image from "next/image";
 import { Carousel } from "flowbite-react";
 import { H1, H1_light } from "@/components/ui/typography/h1";
-import { H2_highlight } from "@/components/ui/typography/h2-highlight";
 import { H2, H2_light } from "@/components/ui/typography/h2";
 import { CTAButton } from "@/components/ui/buttons/cta-button";
 import { AboutItem } from "@/components/ui/about-item";
-import { CarouselItem } from "@/components/ui/carousel-item";
 import { DonationItem } from "@/components/ui/donation-item";
-import { homeCarousel } from "@/lib/gallery";
-import { Suspense } from "react";
+import { HomeCarousel } from "./home-carousel";
 
 export default function Page() {
   return (
     <>
+      <div className="w-full bg">
+        <p className="py-2 bg-[#094931] text-center text-white capitalize tracking-wide">
+          News & information coming soon...
+        </p>
+      </div>
       <div className="h-[235px] sm:h-[350px] px-2">
-        <Suspense fallback={<div className="h-[235px] sm:h-[350px] w-full" />}>
-          <Carousel slideInterval={3000} pauseOnHover>
-            {homeCarousel.map((item) => (
-              <CarouselItem key={item.text} src={item.src} text={item.text} />
-            ))}
-          </Carousel>
-        </Suspense>
+        <HomeCarousel />
       </div>
       <div className="flex flex-col px-3 py-2">
         <div className="text-[13px] sm:text-[15px]">Support the</div>
-        <H2_highlight className="mb-2">
-          Edmonton Islamic Academy Elementary CAMPUS
-        </H2_highlight>
+        <H1>Edmonton Islamic Academy Elementary CAMPUS</H1>
         <div className="text-[14px] sm:text-[16px] mb-1">
           Continue down the tradition of Firsts – Embark on a journey to our
           Next First
         </div>
       </div>
-      <div className="flex justify-center px-3 sm:px-0">
-        <CTAButton href="/explore">Explore</CTAButton>
+      <div className="flex justify-center px-3 sm:px-0 pb-3">
+        <CTAButton href="/explore">View gallery</CTAButton>
       </div>
-      <div id="about" className="py-4 px-2 flex flex-col">
+      <div
+        id="about"
+        className="py-4 px-2 flex flex-col border-t border-[#094931]">
         <H1 className="text-center">About the project</H1>
         <H2 className="text-center">Opening 2026 inshaAllah</H2>
         <div className="grid grid-cols-4 gap-4 my-4">
@@ -51,19 +46,13 @@ export default function Page() {
         </div>
       </div>
       <div className="flex justify-center mb-3 px-3 sm:px-0">
-        <CTAButton href="/donate">Help us reach our goal</CTAButton>
+        <CTAButton href="#vision">Help us reach our goal</CTAButton>
       </div>
       <div id="donation" className="py-4 px-2 flex flex-col bg-[#28AE6F]">
         <H1 className="text-center">Join the journey through OUR Next First</H1>
         <H2 className="text-center">Three ways to contribute</H2>
         <div className="h-[300px]">
           <Carousel slide={false} indicators={false}>
-            <DonationItem
-              src="/donation-01.png"
-              title="Qard Hasan"
-              description="Give a good loan through Qard Hasan. Interest-free and rooted in charity."
-              button={{ text: "Learn more", href: "/contribute/qard-hasan" }}
-            />
             <DonationItem
               src="/donation-02.png"
               title="Donation Programs"
@@ -74,6 +63,12 @@ export default function Page() {
               }}
             />
             <DonationItem
+              src="/donation-01.png"
+              title="Qard Hasan"
+              description="Give a good loan through Qard Hasan. Interest-free and rooted in charity."
+              button={{ text: "Learn more", href: "/contribute/qard-hasan" }}
+            />
+            <DonationItem
               src="/donation-03.png"
               title="Gift Giving"
               description="Coming soon..."
@@ -81,7 +76,7 @@ export default function Page() {
           </Carousel>
         </div>
       </div>
-      <div id="donation" className="flex flex-col bg-[#094931]">
+      <div id="vision" className="flex flex-col bg-[#094931]">
         <div className="relative h-[225px] sm:h-[400px]">
           <Image
             src="/vision.png"
