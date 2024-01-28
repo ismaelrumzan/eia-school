@@ -27,7 +27,7 @@ export default function Page() {
         </div>
       </div>
       <div className="flex justify-center px-3 sm:px-0 pb-3">
-        <CTAButton href="/explore">View gallery</CTAButton>
+        <CTAButton href="/gallery">View gallery</CTAButton>
       </div>
       <div
         id="about"

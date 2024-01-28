@@ -1,7 +1,7 @@
 import { Flowbite } from "flowbite-react";
 import Link from "next/link";
 import { Carousel } from "flowbite-react";
-import { Video, Image } from "lucide-react";
+import { Video, ImageIcon } from "lucide-react";
 import { H1 } from "@/components/ui/typography/h1";
 import { CarouselItem } from "@/components/ui/carousel-item";
 import { H2 } from "@/components/ui/typography/h2";
@@ -13,7 +13,7 @@ export default function Page() {
   return (
     <>
       <H1>Gallery</H1>
-      <div class="grid grid-cols-3 gap-4">
+      <div className="grid grid-cols-3 gap-4">
         <div className="flex flex-col items-center">
           <Link href="#walkthroughs">
             <Video className="text-[#B29F5D] hover:text-[#094931]" size={75} />
@@ -22,13 +22,19 @@ export default function Page() {
         </div>
         <div className="flex flex-col items-center">
           <Link href="#interior">
-            <Image className="text-[#B29F5D] hover:text-[#094931]" size={75} />
+            <ImageIcon
+              className="text-[#B29F5D] hover:text-[#094931]"
+              size={75}
+            />
           </Link>
           <p className="text-sm sm:text-base">Interior</p>
         </div>
         <div className="flex flex-col items-center">
           <Link href="#exterior">
-            <Image className="text-[#B29F5D] hover:text-[#094931]" size={75} />
+            <ImageIcon
+              className="text-[#B29F5D] hover:text-[#094931]"
+              size={75}
+            />
           </Link>
           <p className="text-sm sm:text-base">Exterior</p>
         </div>

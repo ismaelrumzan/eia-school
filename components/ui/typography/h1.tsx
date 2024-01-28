@@ -7,7 +7,7 @@ export function H1({
 }): JSX.Element {
   return (
     <div className={`font-bebas ${className}`}>
-      <h1 className="capitalize text-[#004830] text-[32px] sm:text-[36px] mb-0">
+      <h1 className="capitalize text-[#004830] text-[32px] sm:text-[36px] mb-0 leading-tight sm:leading-relaxed">
         {children}
       </h1>
     </div>
