@@ -92,7 +92,7 @@ export default function Page() {
           </H2_light>
         </div>
         <div className="flex justify-center px-3 sm:px-0 py-2 mb-3">
-          <CTAButton href="/vision">Explore</CTAButton>
+          <CTAButton href="/design">Learn more</CTAButton>
         </div>
       </div>
     </>

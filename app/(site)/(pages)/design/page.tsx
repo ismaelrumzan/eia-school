@@ -1,6 +1,7 @@
 import { H1 } from "@/components/ui/typography/h1";
 import { H2 } from "@/components/ui/typography/h2";
 import { H3 } from "@/components/ui/typography/h3";
+import { CTAButton } from "@/components/ui/buttons/cta-button";
 
 export default function Page() {
   return (
@@ -63,6 +64,13 @@ export default function Page() {
           advanced and unique way.  
         </p>
       </section>
+      <div className="flex justify-center px-3 sm:px-0 my-3">
+        <CTAButton
+          href="https://holo-blok.com/projects/arabian-muslim-association-k-6-school"
+          target="_blank">
+          Holbrook Vision
+        </CTAButton>
+      </div>
     </>
   );
 }

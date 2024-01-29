@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   description: "Join the journey through our next first.",
 };
 
-export default function SiteLayout({
+export default async function SiteLayout({
   children,
 }: {
   children: React.ReactNode;
@@ -51,7 +51,6 @@ export default function SiteLayout({
                 <NavbarToggle className="text-[#094931]" />
               </div>
               <NavbarCollapse>
-                <NavbarLink href="/vision">Vision</NavbarLink>
                 <NavbarLink href="/gallery">Gallery</NavbarLink>
                 <NavbarLink href="/contribute/donation-programs">
                   Donations
