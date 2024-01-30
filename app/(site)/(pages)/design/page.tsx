@@ -64,13 +64,6 @@ export default function Page() {
           advanced and unique way.  
         </p>
       </section>
-      <div className="flex justify-center px-3 sm:px-0 my-3">
-        <CTAButton
-          href="https://holo-blok.com/projects/arabian-muslim-association-k-6-school"
-          target="_blank">
-          Holbrook Vision
-        </CTAButton>
-      </div>
     </>
   );
 }
