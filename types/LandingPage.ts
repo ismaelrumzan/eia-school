@@ -7,14 +7,11 @@ export type HeroType = {
   ctabutton: { text: string; href: string };
 };
 
-export type HeroType2 = {
+export type AnnouncementType = {
   _type: string;
-  heading: string;
-  prefix: string;
-  tagline: string;
-  image: { src: string };
+  message: string;
 };
 
 export type LandingPage = {
-  pageBuilder: (HeroType | HeroType2)[];
+  pageBuilder: (HeroType | AnnouncementType)[];
 };

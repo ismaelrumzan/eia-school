@@ -1,4 +1,3 @@
-import { HomeCarousel } from "@/app/(site)/home-carousel";
 import { HeroType } from "@/types/LandingPage";
 import { CTAButton } from "../buttons/cta-button";
 import config from "@/sanity/config/client-config";

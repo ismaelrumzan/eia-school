@@ -1,6 +1,7 @@
 import { getLandingPage } from "@/sanity/sanity-utils";
 import { Hero } from "@/components/ui/blocks/hero";
-import { HeroType } from "@/types/LandingPage";
+import { AnnouncementType, HeroType } from "@/types/LandingPage";
+import { Announcement } from "@/components/ui/blocks/announcement";
 
 export default async function Page() {
   const pageData = await getLandingPage("home-page");
@@ -16,8 +17,11 @@ export default async function Page() {
         {pageData.pageBuilder && pageData.pageBuilder.length > 0 && (
           <>
             {pageData.pageBuilder.map((block) => {
+              if (block._type === "announcement") {
+                return <Announcement block={block as AnnouncementType} key={block._type} />;
+              }
               if (block._type === "hero") {
-                return <Hero block={block as HeroType} key={block.heading} />;
+                return <Hero block={block as HeroType} key={block._type} />;
               }
             })}
           </>
