@@ -1,4 +1,4 @@
-import { defineField, defineType } from "sanity";
+import { defineField, defineType, defineArrayMember } from "sanity";
 
 export const heroBlockType = defineType({
   name: "hero",
@@ -18,16 +18,19 @@ export const heroBlockType = defineType({
       type: "string",
     }),
     defineField({
-      name: "image",
-      type: "image",
-      options: { hotspot: true },
-      fields: [
-        defineField({
-          name: "alt",
-          type: "string",
-          title: "Alternative text",
+      name: "carousel",
+      type: "array",
+      title: "Hero Carousel",
+      of: [
+        defineArrayMember({
+          name: "carousel",
+          type: "carousel",
         }),
       ],
+    }),
+    defineField({
+      name: "ctabutton",
+      type: "cta",
     }),
   ],
 });

@@ -36,7 +36,8 @@ export async function getLandingPage(slug: string): Promise<LandingPage> {
               prefix,
               heading,
               tagline,
-              image
+              carousel,
+              ctabutton,
             },
           },
         }`,

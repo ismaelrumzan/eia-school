@@ -1,14 +1,15 @@
 import { PortableTextBlock } from "sanity";
 
-type HeroType = {
+export type HeroType = {
   _type: string;
   heading: string;
   prefix: string;
   tagline: string;
-  image: { src: string };
+  carousel: { image: {}; caption: string }[];
+  ctabutton: { text: string; href: string };
 };
 
-type HeroType2 = {
+export type HeroType2 = {
   _type: string;
   heading: string;
   prefix: string;

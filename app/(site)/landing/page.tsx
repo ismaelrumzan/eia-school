@@ -1,11 +1,10 @@
 import { getLandingPage } from "@/sanity/sanity-utils";
+import { Hero } from "@/components/ui/blocks/hero";
+import { HeroType } from "@/types/LandingPage";
 
 export default async function Page() {
   const pageData = await getLandingPage("home-page");
-  console.log(pageData.pageBuilder);
   //Iterate through each element of pageData.pageBuilder and based on the type, use the appropriate component to display it
-  //First try basic hero
-  //Then add array of images inside hero to power our slider
   //Then add each block type
   //How can we include a layout element to be able to have 2 blocks in a row? (Extra)
   return (
@@ -18,12 +17,11 @@ export default async function Page() {
           <>
             {pageData.pageBuilder.map((block) => {
               if (block._type === "hero") {
-                return <div key={block.heading}>Show Hero</div>;
+                return <Hero block={block as HeroType} key={block.heading} />;
               }
             })}
           </>
         )}
-        <div className="h-[235px] sm:h-[350px] px-2"></div>
       </div>
     </>
   );
