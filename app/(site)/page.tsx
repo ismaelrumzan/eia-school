@@ -10,7 +10,7 @@ import { HomeCarousel } from "./home-carousel";
 export default function Page() {
   return (
     <>
-      <div className="w-full bg">
+      <div className="w-full">
         <p className="py-2 bg-[#094931] text-center text-white capitalize tracking-wide">
           News & information coming soon...
         </p>

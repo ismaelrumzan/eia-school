@@ -1,4 +1,5 @@
 import { Page } from "@/types/Page";
+import { LandingPage } from "@/types/LandingPage";
 import { createClient, groq } from "next-sanity";
 import clientConfig from "./config/client-config";
 
@@ -21,6 +22,23 @@ export async function getPage(slug: string): Promise<Page> {
             title,
             "slug": slug.current,
             content
+        }`,
+    { slug }
+  );
+}
+
+export async function getLandingPage(slug: string): Promise<LandingPage> {
+  return createClient(clientConfig).fetch(
+    groq`*[_type == "landingpage" && slug.current == $slug][0]{
+          pageBuilder[]{
+            _type == "hero" => {
+              _type,
+              prefix,
+              heading,
+              tagline,
+              image
+            },
+          },
         }`,
     { slug }
   );
