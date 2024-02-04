@@ -1,5 +1,3 @@
-import { PortableTextBlock } from "sanity";
-
 export type HeroType = {
   _type: string;
   heading: string;
