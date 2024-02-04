@@ -1,12 +1,12 @@
 import { defineField, defineType } from "sanity";
 
-export const carouselBlockType = defineType({
-  name: "carousel",
+export const iconItemType = defineType({
+  name: "icon",
   type: "object",
-  title: "Carousel",
+  title: "Icon Item",
   fields: [
     defineField({
-      name: "caption",
+      name: "text",
       type: "string",
     }),
     defineField({

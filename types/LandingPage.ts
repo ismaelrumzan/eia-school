@@ -12,6 +12,14 @@ export type AnnouncementType = {
   message: string;
 };
 
+export type IconsType = {
+  _type: string;
+  headline: string;
+  subtitle: string;
+  icons: { image: {}; text: string }[];
+  ctabutton: { text: string; href: string };
+};
+
 export type LandingPage = {
-  pageBuilder: (HeroType | AnnouncementType)[];
+  pageBuilder: (HeroType | AnnouncementType | IconsType)[];
 };

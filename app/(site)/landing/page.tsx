@@ -1,6 +1,7 @@
 import { getLandingPage } from "@/sanity/sanity-utils";
 import { Hero } from "@/components/ui/blocks/hero";
-import { AnnouncementType, HeroType } from "@/types/LandingPage";
+import { Icons } from "@/components/ui/blocks/icons";
+import { AnnouncementType, HeroType, IconsType } from "@/types/LandingPage";
 import { Announcement } from "@/components/ui/blocks/announcement";
 
 export default async function Page() {
@@ -11,9 +12,6 @@ export default async function Page() {
   return (
     <>
       <div className="w-full bg">
-        <p className="py-2 bg-[#094931] text-center text-white capitalize tracking-wide">
-          News & information coming soon...
-        </p>
         {pageData.pageBuilder && pageData.pageBuilder.length > 0 && (
           <>
             {pageData.pageBuilder.map((block) => {
@@ -22,6 +20,9 @@ export default async function Page() {
               }
               if (block._type === "hero") {
                 return <Hero block={block as HeroType} key={block._type} />;
+              }
+              if (block._type === "icons") {
+                return <Icons block={block as IconsType} key={block._type}/>;
               }
             })}
           </>

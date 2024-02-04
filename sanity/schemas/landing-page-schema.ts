@@ -25,6 +25,10 @@ export const landingPageType = defineType({
           name: "announcement",
           type: "announcement",
         }),
+        defineArrayMember({
+          name: "icons",
+          type: "icons",
+        }),
       ],
     }),
   ],

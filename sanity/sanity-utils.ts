@@ -31,14 +31,25 @@ export async function getLandingPage(slug: string): Promise<LandingPage> {
   return createClient(clientConfig).fetch(
     groq`*[_type == "landingpage" && slug.current == $slug][0]{
           pageBuilder[]{
+            _type == "announcement" => {
+              _type,
+              message,
+            },
+            _type == "icons" => {
+              _type,
+              headline,
+              subtitle,
+              icons,
+              ctabutton
+            },
             _type == "hero" => {
               _type,
               prefix,
               heading,
               tagline,
               carousel,
-              ctabutton,
-            },
+              ctabutton
+            }
           },
         }`,
     { slug }
