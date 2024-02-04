@@ -1,4 +1,5 @@
 import { defineField, defineType, defineArrayMember } from "sanity";
+import { ImagesIcon } from "@sanity/icons";
 
 export const heroBlockType = defineType({
   name: "hero",
@@ -33,4 +34,18 @@ export const heroBlockType = defineType({
       type: "cta",
     }),
   ],
+  icon: ImagesIcon,
+  preview: {
+    select: {
+      title: "heading",
+      image: "image",
+    },
+    prepare({ title, image }) {
+      return {
+        title: title || "Untitled",
+        subtitle: "Hero",
+        media: image || ImagesIcon,
+      };
+    },
+  },
 });
