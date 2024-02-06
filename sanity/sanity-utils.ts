@@ -31,6 +31,19 @@ export async function getLandingPage(slug: string): Promise<LandingPage> {
   return createClient(clientConfig).fetch(
     groq`*[_type == "landingpage" && slug.current == $slug][0]{
           pageBuilder[]{
+            _type == "image-highlight" => {
+              _type,
+              headline,
+              subtitle,
+              image,
+              ctabutton
+            },
+            _type == "columns" => {
+              _type,
+              headline,
+              subtitle,
+              columns
+            },
             _type == "announcement" => {
               _type,
               message,

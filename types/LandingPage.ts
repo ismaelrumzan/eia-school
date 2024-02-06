@@ -20,6 +20,22 @@ export type IconsType = {
   ctabutton: { text: string; href: string };
 };
 
-export type LandingPage = {
-  pageBuilder: (HeroType | AnnouncementType | IconsType)[];
+export type ColumnsType = {
+  _type: string;
+  headline: string;
+  subtitle: string;
+  columns: { image: {}; title: string; subtitle: string, ctabutton: { text: string; href: string }; }[];
 };
+
+export type ImageHightlightType = {
+  _type: string;
+  headline: string;
+  subtitle: string;
+  image: {};
+  ctabutton: { text: string; href: string };
+};
+
+export type LandingPage = {
+  pageBuilder: (HeroType | AnnouncementType | IconsType | ColumnsType | ImageHightlightType)[];
+};
+

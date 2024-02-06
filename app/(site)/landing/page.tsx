@@ -1,14 +1,14 @@
 import { getLandingPage } from "@/sanity/sanity-utils";
 import { Hero } from "@/components/ui/blocks/hero";
 import { Icons } from "@/components/ui/blocks/icons";
-import { AnnouncementType, HeroType, IconsType } from "@/types/LandingPage";
+import { AnnouncementType, ColumnsType, HeroType, IconsType, ImageHightlightType } from "@/types/LandingPage";
 import { Announcement } from "@/components/ui/blocks/announcement";
+import { Columns } from "@/components/ui/blocks/columns";
+import { ImageHighlight } from "@/components/ui/blocks//image-highlight";
 
 export default async function Page() {
   const pageData = await getLandingPage("home-page");
-  //Iterate through each element of pageData.pageBuilder and based on the type, use the appropriate component to display it
-  //Then add each block type
-  //How can we include a layout element to be able to have 2 blocks in a row? (Extra)
+  console.log(pageData);
   return (
     <>
       <div className="w-full bg">
@@ -23,6 +23,12 @@ export default async function Page() {
               }
               if (block._type === "icons") {
                 return <Icons block={block as IconsType} key={block._type}/>;
+              }
+              if (block._type === "columns") {
+                return <Columns block={block as ColumnsType} key={block._type}/>;
+              }
+              if (block._type === "image-highlight") {
+                return <ImageHighlight block={block as ImageHightlightType} key={block._type}/>;
               }
             })}
           </>
