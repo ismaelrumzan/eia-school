@@ -1,5 +1,6 @@
 import { defineConfig } from "sanity";
-import { deskTool } from "sanity/desk";
+import { structureTool } from "sanity/structure";
+import { iconPicker } from 'sanity-plugin-icon-picker';
 import schemas from "./sanity/schemas";
 
 const config = defineConfig({
@@ -8,7 +9,7 @@ const config = defineConfig({
   title: "EIA Elementary",
   apiVersion: "2024-01-07",
   basePath: "/admin",
-  plugins: [deskTool()],
+  plugins: [structureTool(), iconPicker()],
   schema: { types: schemas },
 });
 
