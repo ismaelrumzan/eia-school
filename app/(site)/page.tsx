@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Carousel } from "flowbite-react";
 import { HelpCircle } from "lucide-react"
 import { CarouselVideo } from "@/components/ui/carousel-video";
+import { VideoPlayer } from "@/components/ui/video-player";
 import { H1, H1_light } from "@/components/ui/typography/h1";
 import { H2, H2_light } from "@/components/ui/typography/h2";
 import { CTAButton } from "@/components/ui/buttons/cta-button";
@@ -38,7 +39,7 @@ export default function Page() {
           </div>
         </div>
         <div className="p-2 flex flex-col justify-center">
-          <CarouselVideo id="lbF6Xl5BhJU" text="A school built like no other" showCaption={false} params="controls=0" />
+          <VideoPlayer url="https://www.youtube.com/watch?v=lbF6Xl5BhJU?cc_lang_pref=en&cc_load_policy=1"/>
         </div>
       </div>
       <div className="p-4">
