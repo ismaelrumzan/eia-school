@@ -56,6 +56,9 @@ export default async function SiteLayout({
                 <NavbarLink href="/contribute/qard-hasan">
                   Qard Hasan
                 </NavbarLink>
+                <NavbarLink href="/faq">
+                  FAQs
+                </NavbarLink>
                 <NavbarLink href="/contact">
                   Contact Us
                 </NavbarLink>
