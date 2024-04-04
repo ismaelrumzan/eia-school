@@ -31,7 +31,7 @@ export default async function SiteLayout({
   return (
     <>
       <main className="w-full bg-white sm:bg-[#f5f5f5]">
-        <div className="container mx-auto max-w-screen-xl bg-white min-h-screen pb-[203.5px] pt-[85px] sm:pt-[116px]">
+        <div className="container mx-auto max-w-screen-xl bg-white min-h-screen pb-[59.5px] pt-[85px] sm:pt-[116px]">
           <Flowbite theme={{ theme: eiaTheme }}>
             <Navbar
               fluid
