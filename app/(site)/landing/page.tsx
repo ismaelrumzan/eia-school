@@ -8,7 +8,6 @@ import { ImageHighlight } from "@/components/ui/blocks//image-highlight";
 
 export default async function Page() {
   const pageData = await getLandingPage("home-page");
-  console.log(pageData);
   return (
     <>
       <div className="w-full bg">
