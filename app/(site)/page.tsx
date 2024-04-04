@@ -93,6 +93,12 @@ export default function Page() {
               description="Give a good loan through Qard Hasan. Interest-free and rooted in charity."
               button={{ text: "Learn more", href: "/contribute/qard-hasan" }}
             />
+                        <DonationItem
+              src="/donation-03.png"
+              title="Ambassador"
+              description="We need ambassadors to reach out to community members."
+              button={{ text: "Learn more", href: "/ambassador" }}
+            />
           </Carousel>
         </div>
       </div>
