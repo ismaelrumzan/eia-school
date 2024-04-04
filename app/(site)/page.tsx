@@ -14,8 +14,8 @@ export default function Page() {
   return (
     <>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-2 mt-2">
-        <div className="flex flex-col px-3 pt-2">
-          <div className="grow">
+        <div className="flex flex-col px-3 pt-2 justify-between">
+          <div>
             <div className="text-[13px] sm:text-[15px]">Support the</div>
             <H1>Edmonton Islamic Academy Elementary CAMPUS</H1>
             <div className="text-[14px] sm:text-[16px] mb-1">
@@ -37,7 +37,7 @@ export default function Page() {
             <CTAButton href="/ambassador">Sign Up Today!</CTAButton>
           </div>
         </div>
-        <div className="p-2">
+        <div className="p-2 flex flex-col justify-center">
           <CarouselVideo id="lbF6Xl5BhJU" text="A school built like no other" showCaption={false} params="controls=0" />
         </div>
       </div>
@@ -54,9 +54,9 @@ export default function Page() {
         id="about"
         className="py-4 px-2 flex flex-col border-t border-[#094931] items-center">
         <H1 className="text-center">About the project</H1>
-        <div className="text-center max-w-lg py-2">Our school combines premier academic standards with a foundation in Islamic values. Designed exclusively for elementary-aged children, we&apos;re dedicated to meeting the growing needs of our community.</div>
+        <div className="text-center max-w-4xl py-2">Our school combines premier academic standards with a foundation in Islamic values. Designed exclusively for elementary-aged children, we&apos;re dedicated to meeting the growing needs of our community.</div>
         <div className="text-center italic font-semibold">Opening 2026 inshaAllah, with your support</div>
-        <div className="grid grid-cols-4 gap-4 my-4 max-w-xl">
+        <div className="grid grid-cols-4 gap-4 lg:gap-x-20 my-4 max-w-4xl">
           <AboutItem src="/about-01.png" text="1700+ students" />
           <AboutItem src="/about-02.png" text="70,000+ square feet" />
           <AboutItem src="/about-03.png" text="76 classrooms" />
