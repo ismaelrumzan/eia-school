@@ -18,12 +18,18 @@ export default function Page() {
           <div className="grow">
             <div className="text-[13px] sm:text-[15px]">Support the</div>
             <H1>Edmonton Islamic Academy Elementary CAMPUS</H1>
+            <div className="text-[14px] sm:text-[16px] mb-1">
+              Continue down the tradition of Firsts – Embark on a journey to our
+              Next First
+            </div>
+          </div>
+          <div>
             <div className="text-[14px] md:text-[16px] mb-1">
               3 Ways to Make a Difference
             </div>
             <ul className="text-[14px] md:text-[16px] ml-6 list-disc [&>li]:mt-2">
-              <li><Link href="/qard-hassan" className="underline hover:no-underline">Qard al Hasan</Link></li>
-              <li><Link href="/donate" className="underline hover:no-underline">Donate</Link></li>
+              <li>Qard al Hasan</li>
+              <li>Donate</li>
               <li>Become an Ambassador</li>
             </ul>
           </div>
@@ -32,20 +38,17 @@ export default function Page() {
           </div>
         </div>
         <div className="p-2">
-          <CarouselVideo id="lbF6Xl5BhJU" text="A school built like no other" showCaption={false} params="controls=0"/>
+          <CarouselVideo id="lbF6Xl5BhJU" text="A school built like no other" showCaption={false} params="controls=0" />
         </div>
       </div>
       <div className="p-4">
         <div className="flex justify-center items-center gap-2">
-        <HelpCircle className="text-[#C6BB79]"/>
-        <H2 className="text-center">
-          Check out our FAQs
-        </H2>
+          <HelpCircle className="text-[#C6BB79]" />
+          <H2 className="text-center">
+            Check out our <Link href="/faq" className="underline hover:no-underline">FAQs</Link>
+          </H2>
         </div>
         <div className="text-center">Explore the most frequently asked questions from our community. </div>
-        <div className="mt-3 flex justify-center">
-          <CTAButton href="/faq">Go to FAQs</CTAButton>
-        </div>
       </div>
       <div
         id="about"
@@ -93,7 +96,7 @@ export default function Page() {
               description="Give a good loan through Qard Hasan. Interest-free and rooted in charity."
               button={{ text: "Learn more", href: "/contribute/qard-hasan" }}
             />
-                        <DonationItem
+            <DonationItem
               src="/donation-03.png"
               title="Ambassador"
               description="We need ambassadors to reach out to community members."
