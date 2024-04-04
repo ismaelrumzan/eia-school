@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Flowbite } from "flowbite-react";
 import { ArrowRight } from "lucide-react";
+import { NavCTA } from "./nav-cta";
 import {
   Navbar,
   NavbarBrand,
@@ -44,10 +45,7 @@ export default async function SiteLayout({
                 />
               </NavbarBrand>
               <div className="flex md:order-2 gap-2">
-                <NavButton href="/donate">
-                  Donate
-                  <ArrowRight />
-                </NavButton>
+                <NavCTA />
                 <NavbarToggle className="text-[#094931]" />
               </div>
               <NavbarCollapse>
@@ -57,6 +55,9 @@ export default async function SiteLayout({
                 </NavbarLink>
                 <NavbarLink href="/contribute/qard-hasan">
                   Qard Hasan
+                </NavbarLink>
+                <NavbarLink href="/contact">
+                  Contact Us
                 </NavbarLink>
               </NavbarCollapse>
             </Navbar>
