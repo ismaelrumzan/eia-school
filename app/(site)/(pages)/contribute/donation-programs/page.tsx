@@ -12,17 +12,13 @@ export default function Page() {
       <H2>Empower Our Future</H2>
       <section className="prose max-w-none">
         <p>
-          Through the EIA donation program. You have the flexibility to shape
+          You have the flexibility to shape
           the impact of your generosity. Whether you prefer spreading your
           donation over four years or contributing all at once, the choice is
           yours.
         </p>
         <p>
-          Specifically, 73 rooms are identified, each representing a $200,000
-          donation. This contribution can be distributed over four years at
-          50,000 per year to accommodate your preferences. Additionally,
-          donations of $10,000 and above are also eligible for a four-year
-          spreading option based on your request.
+        Maximize the impact of your generosity! Your donations are not only tax deductible but also an opportunity to fulfill your zakat obligations. According to our scholars, contributing to the school falls under &apos;In the Cause of Allah (Fi Sabilillah)&apos;, supporting education and empowering our community.
         </p>
       </section>
       <div className="flex justify-center px-3 sm:px-0 my-4">

@@ -38,15 +38,15 @@ export default function Page() {
           </div>
         </div>
         <div className="p-2 flex flex-col justify-center w-full max-h-[240px] sm:max-h-none">
-          <VideoPlayer url="https://www.youtube.com/watch?v=lbF6Xl5BhJU"/>
+          <VideoPlayer url="https://www.youtube.com/watch?v=lbF6Xl5BhJU" />
         </div>
       </div>
       <div className="p-4">
         <div className="flex justify-center items-center gap-2">
           <HelpCircle className="text-[#C6BB79]" />
-          <H2 className="text-center">
-            Check out our <Link href="/faq" className="underline hover:no-underline">FAQs</Link>
-          </H2>
+          <Link href="/faq" className="underline hover:no-underline"><H2 className="text-center">
+            Check out our FAQs
+          </H2></Link>
         </div>
         <div className="text-center">Explore the most frequently asked questions from our community. </div>
       </div>
