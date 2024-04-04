@@ -5,7 +5,6 @@ import { ArrowRight, SendHorizonal } from "lucide-react";
 
 export function NavCTA(): JSX.Element {
     const pathname = usePathname();
-    console.log(pathname);
     return (
         <>
             {pathname === "/donate" ? <NavButton href="/contact">
