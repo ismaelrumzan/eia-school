@@ -25,7 +25,7 @@ export default function Page() {
           spreading option based on your request.
         </p>
       </section>
-      <div className="flex justify-center px-3 sm:px-0 mb-3">
+      <div className="flex justify-center px-3 sm:px-0 my-4">
         <CTAButton href="/donate">Donate today</CTAButton>
       </div>
 
@@ -57,7 +57,7 @@ export default function Page() {
         </p>
       </section>
       <Table3 />
-      <div className="flex justify-center px-3 sm:px-0 my-3">
+      <div className="flex justify-center px-3 sm:px-0 my-4">
         <CTAButton href="/donate">Donate Today</CTAButton>
       </div>
       <CarouselItem src="/gallery/exterior-02.jpg" text="school" />
@@ -70,7 +70,7 @@ export default function Page() {
           reciprocated will be generous, insha’Allah.
         </p>
       </section>
-      <div className="flex justify-center px-3 sm:px-0 my-3">
+      <div className="flex justify-center px-3 sm:px-0 my-4">
         <CTAButton href="/donate">Donate Today</CTAButton>
       </div>
     </>

@@ -11,7 +11,7 @@ export function NavButton({
   return (
     <Link href={href}>
       <Button
-        className="font-bebas text-[#094931] text-[20px] uppercase bg-[#C6BB79] hover:bg-[#DED6A5]">
+        className="drop-shadow bg-gradient-to-r from-[#C6BB79] to-orange-500 font-bebas text-[#094931] text-[20px] uppercase hover:to-[#C6BB79] hover:from-orange-500">
         {children}
       </Button></Link>
   );
