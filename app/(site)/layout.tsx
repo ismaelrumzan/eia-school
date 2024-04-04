@@ -31,11 +31,11 @@ export default async function SiteLayout({
   return (
     <>
       <main className="w-full bg-white sm:bg-[#f5f5f5]">
-        <div className="container mx-auto max-w-[768px] bg-white min-h-screen pb-[60px] pt-[85px] sm:pt-[116px]">
+        <div className="container mx-auto max-w-screen-xl bg-white min-h-screen pb-[60px] pt-[85px] sm:pt-[116px]">
           <Flowbite theme={{ theme: eiaTheme }}>
             <Navbar
               fluid
-              className="fixed top-0 w-full max-w-[768px] z-50 border-t-[6px] border-[#094931] drop-shadow">
+              className="fixed top-0 w-full max-w-screen-xl z-50 border-t-[6px] border-[#094931] drop-shadow">
               <NavbarBrand as={Link} href="/">
                 <Image
                   src={logo}

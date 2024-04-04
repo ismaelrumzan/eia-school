@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Carousel } from "flowbite-react";
+import { HelpingHand, HelpCircle } from "lucide-react"
 import { CarouselVideo } from "@/components/ui/carousel-video";
 import { H1, H1_light } from "@/components/ui/typography/h1";
 import { H2, H2_light } from "@/components/ui/typography/h2";
@@ -16,15 +17,38 @@ export default function Page() {
           News & information coming soon...
         </p>
       </div>
-      <div className="flex flex-col px-3 py-2">
-        <div className="text-[13px] sm:text-[15px]">Support the</div>
-        <H1>Edmonton Islamic Academy Elementary CAMPUS</H1>
-        <div className="text-[14px] sm:text-[16px] mb-1">
-          Continue down the tradition of Firsts – Embark on a journey to our
-          Next First
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+        <div className="flex flex-col px-3 pt-2">
+          <div className="grow">
+            <div className="text-[13px] sm:text-[15px]">Support the</div>
+            <H1>Edmonton Islamic Academy Elementary CAMPUS</H1>
+            <div className="text-[14px] md:text-[16px] mb-1">
+              3 Ways to Make a Difference
+            </div>
+            <ul className="text-[14px] md:text-[16px] ml-6 list-disc [&>li]:mt-2">
+              <li>Qard al Hasan</li>
+              <li>Donate</li>
+              <li>Become an Ambassador</li>
+            </ul>
+          </div>
+          <div className="mt-3">
+            <CTAButton href="/donate">Sign Up Today!</CTAButton>
+          </div>
         </div>
         <div>
           <CarouselVideo id="lbF6Xl5BhJU" text="A school built like no other" showCaption={false} />
+        </div>
+      </div>
+      <div className="p-4">
+        <div className="flex justify-center items-center gap-2">
+        <HelpCircle className="text-[#C6BB79]"/>
+        <H2 className="text-center">
+          Check out our FAQs
+        </H2>
+        </div>
+        <div className="text-center">Explore the most frequently asked questions from our community. </div>
+        <div className="mt-3 flex justify-center">
+          <CTAButton href="/faq">Go to FAQs</CTAButton>
         </div>
       </div>
       <div className="h-[235px] sm:h-[350px] px-2">
