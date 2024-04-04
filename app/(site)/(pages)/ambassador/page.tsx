@@ -10,7 +10,7 @@ export default function Page() {
           <ArrowLeft />
         </NavButton>
       </div>
-      <SubmitForm src="https://docs.google.com/forms/d/e/1FAIpQLSfnBGf3yezoNCQf0hcrWeSsMr7aN12gkpeUB6VeNXiLEPA3wA/viewform?embedded=true"/>
+      <SubmitForm src="https://docs.google.com/forms/d/e/1FAIpQLSf0kBX93_BIeh7suBaGVrcqth4HRX_jUCxoP4XM--Ehca1C2Q/viewform?embedded=true" />
     </>
   );
 }

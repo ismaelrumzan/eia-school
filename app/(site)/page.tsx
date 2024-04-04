@@ -1,6 +1,7 @@
 import Image from "next/image";
+import Link from "next/link";
 import { Carousel } from "flowbite-react";
-import { HelpingHand, HelpCircle } from "lucide-react"
+import { HelpCircle } from "lucide-react"
 import { CarouselVideo } from "@/components/ui/carousel-video";
 import { H1, H1_light } from "@/components/ui/typography/h1";
 import { H2, H2_light } from "@/components/ui/typography/h2";
@@ -26,17 +27,17 @@ export default function Page() {
               3 Ways to Make a Difference
             </div>
             <ul className="text-[14px] md:text-[16px] ml-6 list-disc [&>li]:mt-2">
-              <li>Qard al Hasan</li>
-              <li>Donate</li>
+              <li><Link href="/qard-hassan" className="underline hover:no-underline">Qard al Hasan</Link></li>
+              <li><Link href="/donate" className="underline hover:no-underline">Donate</Link></li>
               <li>Become an Ambassador</li>
             </ul>
           </div>
           <div className="mt-3">
-            <CTAButton href="/donate">Sign Up Today!</CTAButton>
+            <CTAButton href="/ambassador">Sign Up Today!</CTAButton>
           </div>
         </div>
-        <div>
-          <CarouselVideo id="lbF6Xl5BhJU" text="A school built like no other" showCaption={false} />
+        <div className="p-2">
+          <CarouselVideo id="lbF6Xl5BhJU" text="A school built like no other" showCaption={false} params="controls=0"/>
         </div>
       </div>
       <div className="p-4">
@@ -51,18 +52,13 @@ export default function Page() {
           <CTAButton href="/faq">Go to FAQs</CTAButton>
         </div>
       </div>
-      <div className="h-[235px] sm:h-[350px] px-2">
-        <HomeCarousel />
-      </div>
-      <div className="flex justify-center px-3 sm:px-0 py-3">
-        <CTAButton href="/gallery">View gallery</CTAButton>
-      </div>
       <div
         id="about"
-        className="py-4 px-2 flex flex-col border-t border-[#094931]">
+        className="py-4 px-2 flex flex-col border-t border-[#094931] items-center">
         <H1 className="text-center">About the project</H1>
-        <H2 className="text-center">Opening 2026 inshaAllah</H2>
-        <div className="grid grid-cols-4 gap-4 my-4">
+        <div className="text-center max-w-lg py-2">Our school combines premier academic standards with a foundation in Islamic values. Designed exclusively for elementary-aged children, we&apos;re dedicated to meeting the growing needs of our community.</div>
+        <div className="text-center italic font-semibold">Opening 2026 inshaAllah, with your support</div>
+        <div className="grid grid-cols-4 gap-4 my-4 max-w-xl">
           <AboutItem src="/about-01.png" text="1700+ students" />
           <AboutItem src="/about-02.png" text="70,000+ square feet" />
           <AboutItem src="/about-03.png" text="76 classrooms" />
@@ -74,7 +70,13 @@ export default function Page() {
         </div>
       </div>
       <div className="flex justify-center mb-3 px-3 sm:px-0">
-        <CTAButton href="#vision">Help us reach our goal</CTAButton>
+        <CTAButton href="/about">Watch video</CTAButton>
+      </div>
+      <div className="h-[235px] sm:h-[350px] px-2">
+        <HomeCarousel />
+      </div>
+      <div className="flex justify-center px-3 sm:px-0 py-3">
+        <CTAButton href="/gallery">View gallery</CTAButton>
       </div>
       <div id="donation" className="py-4 px-2 flex flex-col bg-[#28AE6F]">
         <H1 className="text-center">Join the journey through OUR Next First</H1>
@@ -95,11 +97,6 @@ export default function Page() {
               title="Qard Hasan"
               description="Give a good loan through Qard Hasan. Interest-free and rooted in charity."
               button={{ text: "Learn more", href: "/contribute/qard-hasan" }}
-            />
-            <DonationItem
-              src="/donation-03.png"
-              title="Gift Giving"
-              description="Coming soon..."
             />
           </Carousel>
         </div>

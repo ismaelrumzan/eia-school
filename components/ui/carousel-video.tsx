@@ -7,14 +7,16 @@ export function CarouselVideo({
   id,
   text,
   showCaption = true,
+  params = '',
 }: {
   id: string;
   text: string;
   showCaption?: boolean;
+  params?: string;
 }): JSX.Element {
   return (
     <div>
-      <LiteYouTubeEmbed id={id} title={text} />
+      <LiteYouTubeEmbed id={id} title={text} params={params} />
       {showCaption ? <H2_highlight className="pt-2 text-center">{text}</H2_highlight> : null}
     </div>
   );
