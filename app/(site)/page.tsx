@@ -37,7 +37,7 @@ export default function Page() {
             <CTAButton href="/ambassador">Sign Up Today!</CTAButton>
           </div>
         </div>
-        <div className="p-2 flex flex-col justify-center w-full min-h-[240px]">
+        <div className="p-2 flex flex-col justify-center w-full max-h-[240px] sm:max-h-none">
           <VideoPlayer url="https://www.youtube.com/watch?v=lbF6Xl5BhJU"/>
         </div>
       </div>

@@ -1,5 +1,5 @@
 'use client';
-import ReactPlayer from 'react-player/lazy'
+import ReactPlayer from 'react-player'
 
 export function VideoPlayer({
     url
@@ -7,7 +7,7 @@ export function VideoPlayer({
     url: string
 }): JSX.Element {
     return (
-        <ReactPlayer controls url={url} volume={0} muted width="100%" height="100%" playing config={{
+        <ReactPlayer controls url={url} volume={0} muted width="100%" playing config={{
             youtube: {
                 playerVars: { cc_load_policy: 1, cc_lang_pref: 'en', iv_load_policy: 1 }
             }
