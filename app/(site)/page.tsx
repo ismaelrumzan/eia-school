@@ -13,12 +13,7 @@ import { HomeCarousel } from "./home-carousel";
 export default function Page() {
   return (
     <>
-      <div className="w-full bg">
-        <p className="py-2 bg-[#094931] text-center text-white capitalize tracking-wide">
-          News & information coming soon...
-        </p>
-      </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-2 mt-2">
         <div className="flex flex-col px-3 pt-2">
           <div className="grow">
             <div className="text-[13px] sm:text-[15px]">Support the</div>

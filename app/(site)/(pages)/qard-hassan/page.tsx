@@ -1,16 +1,11 @@
 import { SubmitForm } from "@/components/ui/submit-form";
-import { ArrowLeft } from "lucide-react";
-import { NavButton } from "@/components/ui/buttons/nav-button";
+import { H1 } from "@/components/ui/typography/h1";
 
 export default function Page() {
   return (
-    <>
-      <div className="pl-3 mb-3">
-        <NavButton href="/">
-          <ArrowLeft />
-        </NavButton>
-      </div>
+    <div className="pb-4">
+    <H1 className="my-3">Qard Hassan</H1>
       <SubmitForm src="https://docs.google.com/forms/d/e/1FAIpQLSfnBGf3yezoNCQf0hcrWeSsMr7aN12gkpeUB6VeNXiLEPA3wA/viewform?embedded=true"/>
-    </>
+    </div>
   );
 }
