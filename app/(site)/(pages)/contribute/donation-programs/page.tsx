@@ -1,6 +1,7 @@
 import { H1 } from "@/components/ui/typography/h1";
 import { H2 } from "@/components/ui/typography/h2";
 import { H3 } from "@/components/ui/typography/h3";
+import { ContactAlert } from "@/components/ui/contact-alert";
 import { CTAButton } from "@/components/ui/buttons/cta-button";
 import { TableMain, Table1, Table2, Table3 } from "./tables";
 import { CarouselItem } from "@/components/ui/carousel-item";
@@ -10,15 +11,21 @@ export default function Page() {
     <>
       <H1>Donation Programs</H1>
       <H2>Empower Our Future</H2>
+      <div className="my-2">
+        <ContactAlert />
+      </div>
       <section className="prose max-w-none">
         <p>
-          You have the flexibility to shape
-          the impact of your generosity. Whether you prefer spreading your
-          donation over four years or contributing all at once, the choice is
-          yours.
+          You have the flexibility to shape the impact of your generosity.
+          Whether you prefer spreading your donation over four years or
+          contributing all at once, the choice is yours.
         </p>
         <p>
-        Maximize the impact of your generosity! Your donations are not only tax deductible but also an opportunity to fulfill your zakat obligations. According to our scholars, contributing to the school falls under &apos;In the Cause of Allah (Fi Sabilillah)&apos;, supporting education and empowering our community.
+          Maximize the impact of your generosity! Your donations are not only
+          tax deductible but also an opportunity to fulfill your zakat
+          obligations. According to our scholars, contributing to the school
+          falls under &apos;In the Cause of Allah (Fi Sabilillah)&apos;,
+          supporting education and empowering our community.
         </p>
       </section>
       <div className="flex justify-center px-3 sm:px-0 my-4">
@@ -35,6 +42,9 @@ export default function Page() {
         </p>
       </section>
       <Table1 />
+      <div className="my-2">
+        <ContactAlert />
+      </div>
       <H3>4X Your Influence:</H3>
       <section className="prose max-w-none">
         <p>
