@@ -34,7 +34,7 @@ export default function Page() {
             </ul>
           </div>
           <div className="mt-3">
-            <CTAButton href="/ambassador">Sign Up Today!</CTAButton>
+            <CTAButton href="/contribute">Sign Up Today!</CTAButton>
           </div>
         </div>
         <div className="p-2 flex flex-col justify-center w-full min-h-[240px] sm:min-h-[300px]">

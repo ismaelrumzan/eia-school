@@ -23,7 +23,7 @@ export function NavCTA(): JSX.Element {
             <Link href="/contact">
               <div className="flex justify-between text-[12px] text-slate-700 pt-1 underline tracking-wide hover:no-underline">
                 <MailIcon className="w-4 h-4 text-[#C6BB79]" />
-                Contact Me
+                Get in touch
               </div>
             </Link>
           )}

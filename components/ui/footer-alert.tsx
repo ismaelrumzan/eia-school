@@ -20,7 +20,7 @@ function AlertContent(): JSX.Element {
     return (
         <div className="flex flex-col sm:flex-row gap-2">
             <div>Qard al Hasan | Donate | Become an Ambassador</div>
-            <CTAButton href="/ambassador">Sign Up Today!</CTAButton>
+            <CTAButton href="/contribute">Sign Up Today!</CTAButton>
         </div>
     )
 }
