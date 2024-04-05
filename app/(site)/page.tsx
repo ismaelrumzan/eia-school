@@ -38,7 +38,7 @@ export default function Page() {
           </div>
         </div>
         <div className="p-2 flex flex-col justify-center w-full min-h-[240px] sm:min-h-[300px]">
-          <VideoPlayer url="https://www.youtube.com/watch?v=lbF6Xl5BhJU?cc_load_policy=1&cc_lang_pref=en=&iv_load_policy=1&autoplay=1&mute=1" />
+          <VideoPlayer url="https://www.youtube.com/embed/lbF6Xl5BhJU?cc_load_policy=1&cc_lang_pref=en=&iv_load_policy=1&autoplay=1&mute=1" />
         </div>
       </div>
       <div className="p-4">
