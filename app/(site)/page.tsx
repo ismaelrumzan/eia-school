@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Carousel } from "flowbite-react";
 import { HelpCircle } from "lucide-react"
-import { VideoPlayer } from "@/components/ui/video-player";
+import { VideoPlayer } from "@/components/ui/iframe-video";
 import { H1, H1_light } from "@/components/ui/typography/h1";
 import { H2, H2_light } from "@/components/ui/typography/h2";
 import { CTAButton } from "@/components/ui/buttons/cta-button";
@@ -37,8 +37,8 @@ export default function Page() {
             <CTAButton href="/ambassador">Sign Up Today!</CTAButton>
           </div>
         </div>
-        <div className="p-2 flex flex-col justify-center w-full max-h-[240px] sm:max-h-none">
-          <VideoPlayer url="https://www.youtube.com/watch?v=lbF6Xl5BhJU" />
+        <div className="p-2 flex flex-col justify-center w-full min-h-[240px] sm:min-h-[300px]">
+          <VideoPlayer url="https://www.youtube.com/watch?v=lbF6Xl5BhJU?cc_load_policy=1&cc_lang_pref=en=&iv_load_policy=1&autoplay=1&mute=1" />
         </div>
       </div>
       <div className="p-4">
