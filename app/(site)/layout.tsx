@@ -1,4 +1,4 @@
-import Script from "next/script";
+import { GoogleTagManager } from "@next/third-parties/google";
 import Link from "next/link";
 import Image from "next/image";
 import { Flowbite } from "flowbite-react";
@@ -30,6 +30,7 @@ export default async function SiteLayout({
 }) {
   return (
     <>
+      <GoogleTagManager gtmId="G-CCFVY3095R" />
       <main className="w-full bg-white sm:bg-[#f5f5f5]">
         <div className="container mx-auto max-w-[768px] bg-white min-h-screen pb-[60px] pt-[85px] sm:pt-[116px]">
           <Flowbite theme={{ theme: eiaTheme }}>
@@ -65,10 +66,6 @@ export default async function SiteLayout({
           <Footer />
         </div>
       </main>
-      <Script
-        async
-        src="https://www.googletagmanager.com/gtag/js?id=G-XQ0N2GP5QJ"
-      />
       <Analytics />
       <SpeedInsights />
     </>
