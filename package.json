@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@next/third-parties": "^14.1.4",
     "@radix-ui/react-dialog": "^1.0.5",
     "@radix-ui/react-label": "^2.0.2",
     "@radix-ui/react-slot": "^1.0.2",
@@ -27,7 +28,6 @@
     "react": "^18",
     "react-dom": "^18",
     "react-lite-youtube-embed": "^2.4.0",
-    "react-player": "^2.15.1",
     "sanity": "^3.23.4",
     "sanity-plugin-icon-picker": "^3.3.0",
     "styled-components": "^6.1.8",

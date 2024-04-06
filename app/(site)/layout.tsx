@@ -2,7 +2,7 @@ import Script from "next/script";
 import Link from "next/link";
 import Image from "next/image";
 import { Flowbite } from "flowbite-react";
-import { ArrowRight } from "lucide-react";
+import { GoogleTagManager } from "@next/third-parties/google";
 import { NavCTA } from "./nav-cta";
 import {
   Navbar,
@@ -31,6 +31,7 @@ export default async function SiteLayout({
 }) {
   return (
     <>
+      <GoogleTagManager gtmId="G-CCFVY3095R" />
       <main className="w-full bg-white sm:bg-[#f5f5f5]">
         <div className="container mx-auto max-w-screen-xl bg-white min-h-screen pb-[59.5px] pt-[85px] sm:pt-[116px]">
           <Flowbite theme={{ theme: eiaTheme }}>
@@ -56,12 +57,8 @@ export default async function SiteLayout({
                 <NavbarLink href="/contribute/qard-hasan">
                   Qard Hasan
                 </NavbarLink>
-                <NavbarLink href="/faq">
-                  FAQs
-                </NavbarLink>
-                <NavbarLink href="/contact">
-                  Contact Us
-                </NavbarLink>
+                <NavbarLink href="/faq">FAQs</NavbarLink>
+                <NavbarLink href="/contact">Contact Us</NavbarLink>
               </NavbarCollapse>
             </Navbar>
           </Flowbite>
@@ -69,10 +66,6 @@ export default async function SiteLayout({
           <Footer />
         </div>
       </main>
-      <Script
-        async
-        src="https://www.googletagmanager.com/gtag/js?id=G-XQ0N2GP5QJ"
-      />
       <Analytics />
       <SpeedInsights />
     </>
