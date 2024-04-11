@@ -34,7 +34,9 @@ export default function Page() {
             </ul>
           </div>
           <div className="mt-3">
-            <CTAButton href="/contribute">Sign Up Today!</CTAButton>
+            <CTAButton gtmEvent="signup-hero-home" href="/contribute">
+              Sign Up Today!
+            </CTAButton>
           </div>
         </div>
         <div className="p-2 flex flex-col justify-center w-full min-h-[240px] sm:min-h-[300px]">
@@ -76,13 +78,17 @@ export default function Page() {
         </div>
       </div>
       <div className="flex justify-center mb-3 px-3 sm:px-0">
-        <CTAButton href="/about">Watch video</CTAButton>
+        <CTAButton gtmEvent="watch-about-home" href="/about">
+          Watch video
+        </CTAButton>
       </div>
       <div className="h-[235px] sm:h-[350px] px-2">
         <HomeCarousel />
       </div>
       <div className="flex justify-center px-3 sm:px-0 py-3">
-        <CTAButton href="/gallery">View gallery</CTAButton>
+        <CTAButton gtmEvent="view-gallery-home" href="/gallery">
+          View gallery
+        </CTAButton>
       </div>
       <div id="donation" className="py-4 px-2 flex flex-col bg-[#28AE6F]">
         <H1 className="text-center">Join the journey through OUR Next First</H1>
@@ -129,7 +135,9 @@ export default function Page() {
           </H2_light>
         </div>
         <div className="flex justify-center px-3 sm:px-0 py-2 mb-3">
-          <CTAButton href="/design">Learn more</CTAButton>
+          <CTAButton gtmEvent="view-design-home" href="/design">
+            Learn more
+          </CTAButton>
         </div>
       </div>
     </>

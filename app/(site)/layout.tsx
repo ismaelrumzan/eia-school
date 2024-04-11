@@ -2,7 +2,6 @@ import { GoogleTagManager } from "@next/third-parties/google";
 import Link from "next/link";
 import Image from "next/image";
 import { Flowbite } from "flowbite-react";
-import { GoogleTagManager } from "@next/third-parties/google";
 import { NavCTA } from "./nav-cta";
 import {
   Navbar,

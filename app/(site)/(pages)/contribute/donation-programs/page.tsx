@@ -29,7 +29,9 @@ export default function Page() {
         </p>
       </section>
       <div className="flex justify-center px-3 sm:px-0 my-4">
-        <CTAButton href="/donate">Donate today</CTAButton>
+        <CTAButton gtmEvent="donate-donation-programs" href="/donate">
+          Donate today
+        </CTAButton>
       </div>
 
       <H2>See how it works</H2>
@@ -64,7 +66,9 @@ export default function Page() {
       </section>
       <Table3 />
       <div className="flex justify-center px-3 sm:px-0 my-4">
-        <CTAButton href="/donate">Donate Today</CTAButton>
+        <CTAButton gtmEvent="donate-donation-programs" href="/donate">
+          Donate Today
+        </CTAButton>
       </div>
       <CarouselItem src="/gallery/exterior-02.jpg" text="school" />
       <section className="prose max-w-none">
@@ -77,7 +81,9 @@ export default function Page() {
         </p>
       </section>
       <div className="flex justify-center px-3 sm:px-0 my-4">
-        <CTAButton href="/donate">Donate Today</CTAButton>
+        <CTAButton gtmEvent="donate-donation-programs" href="/donate">
+          Donate Today
+        </CTAButton>
       </div>
     </>
   );
