@@ -18,7 +18,7 @@ const config: Config = {
       },
     },
     fontFamily: {
-      caecilia: ["Caecilia LT Pro", "sans-serif"],
+      arvo: ["var(--font-arvo)"],
       bebas: ["var(--font-bebas)"],
     },
   },

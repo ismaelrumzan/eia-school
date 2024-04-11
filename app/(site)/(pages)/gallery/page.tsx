@@ -1,7 +1,7 @@
 import { Flowbite } from "flowbite-react";
 import Link from "next/link";
 import { Carousel } from "flowbite-react";
-import { Video, ImageIcon } from "lucide-react";
+import { Youtube, Video, ImageIcon } from "lucide-react";
 import { H1 } from "@/components/ui/typography/h1";
 import { CarouselItem } from "@/components/ui/carousel-item";
 import { H2 } from "@/components/ui/typography/h2";
@@ -13,17 +13,23 @@ export default function Page() {
   return (
     <>
       <H1>Gallery</H1>
-      <div className="grid grid-cols-3 gap-4">
+      <div className="grid grid-cols-4 gap-4">
+      <div className="flex flex-col items-center">
+          <Link href="#videos">
+            <Youtube className="text-[#B29F5D] hover:text-[#094931] w-12 md:w-20" size={75} />
+          </Link>
+          <p className="text-sm sm:text-base">Videos</p>
+        </div>
         <div className="flex flex-col items-center">
           <Link href="#walkthroughs">
-            <Video className="text-[#B29F5D] hover:text-[#094931]" size={75} />
+            <Video className="text-[#B29F5D] hover:text-[#094931] w-12 md:w-20" size={75} />
           </Link>
           <p className="text-sm sm:text-base">Walkthroughs</p>
         </div>
         <div className="flex flex-col items-center">
           <Link href="#interior">
             <ImageIcon
-              className="text-[#B29F5D] hover:text-[#094931]"
+              className="text-[#B29F5D] hover:text-[#094931] w-12 md:w-20"
               size={75}
             />
           </Link>
@@ -32,12 +38,21 @@ export default function Page() {
         <div className="flex flex-col items-center">
           <Link href="#exterior">
             <ImageIcon
-              className="text-[#B29F5D] hover:text-[#094931]"
+              className="text-[#B29F5D] hover:text-[#094931] w-12 md:w-20"
               size={75}
             />
           </Link>
           <p className="text-sm sm:text-base">Exterior</p>
         </div>
+      </div>
+      <div id="videos" className="mt-3">
+        <H2 className="py-2">Videos</H2>
+        <Flowbite theme={{ theme: eiaTheme }}>
+          <Carousel slide={false} indicators={false}>
+            <CarouselVideo id="lbF6Xl5BhJU" text="A school built like no other" />
+            <CarouselVideo id="dEDcNA-vHvo" text="About the Edmonton Islamic Academy - Elementary Campus" />
+          </Carousel>
+        </Flowbite>
       </div>
       <div id="walkthroughs" className="mt-3">
         <H2 className="py-2">Video walkthroughs</H2>

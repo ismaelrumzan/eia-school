@@ -23,7 +23,9 @@ export function DonationItem({
         <p className="text-sm sm:text-base text-center">{description}</p>
         {button && (
           <div className="flex justify-center px-3 sm:px-0">
-            <CTAButton href={button.href}>{button.text}</CTAButton>
+            <CTAButton gtmEvent={`carousel-${title}`} href={button.href}>
+              {button.text}
+            </CTAButton>
           </div>
         )}
       </div>

@@ -2,7 +2,7 @@ import { GoogleTagManager } from "@next/third-parties/google";
 import Link from "next/link";
 import Image from "next/image";
 import { Flowbite } from "flowbite-react";
-import { ArrowRight } from "lucide-react";
+import { NavCTA } from "./nav-cta";
 import {
   Navbar,
   NavbarBrand,
@@ -32,11 +32,11 @@ export default async function SiteLayout({
     <>
       <GoogleTagManager gtmId="G-CCFVY3095R" />
       <main className="w-full bg-white sm:bg-[#f5f5f5]">
-        <div className="container mx-auto max-w-[768px] bg-white min-h-screen pb-[60px] pt-[85px] sm:pt-[116px]">
+        <div className="container mx-auto max-w-screen-xl bg-white min-h-screen pb-[59.5px] pt-[85px] sm:pt-[116px]">
           <Flowbite theme={{ theme: eiaTheme }}>
             <Navbar
               fluid
-              className="fixed top-0 w-full max-w-[768px] z-50 border-t-[6px] border-[#094931] drop-shadow">
+              className="fixed top-0 w-full max-w-screen-xl z-50 border-t-[6px] border-[#094931] drop-shadow">
               <NavbarBrand as={Link} href="/">
                 <Image
                   src={logo}
@@ -45,10 +45,7 @@ export default async function SiteLayout({
                 />
               </NavbarBrand>
               <div className="flex md:order-2 gap-2">
-                <NavButton href="/donate">
-                  Donate
-                  <ArrowRight />
-                </NavButton>
+                <NavCTA />
                 <NavbarToggle className="text-[#094931]" />
               </div>
               <NavbarCollapse>
@@ -59,6 +56,8 @@ export default async function SiteLayout({
                 <NavbarLink href="/contribute/qard-hasan">
                   Qard Hasan
                 </NavbarLink>
+                <NavbarLink href="/faq">FAQs</NavbarLink>
+                <NavbarLink href="/contact">Contact Us</NavbarLink>
               </NavbarCollapse>
             </Navbar>
           </Flowbite>

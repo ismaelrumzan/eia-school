@@ -40,7 +40,9 @@ export default function Page() {
         </p>
       </section>
       <div className="flex justify-center px-3 sm:px-0 mb-3">
-        <CTAButton href="/qard-hassan">Sign up for qard hasan</CTAButton>
+        <CTAButton gtmEvent="signup-qard-hassan" href="/qard-hassan">
+          Sign up for qard hasan
+        </CTAButton>
       </div>
       <section className="prose max-w-none">
         <H2>Rewarding benefits</H2>
@@ -78,7 +80,9 @@ export default function Page() {
         </ul>
       </section>
       <div className="flex justify-center px-3 sm:px-0 mb-3">
-        <CTAButton href="/qard-hassan">Sign up for qard hasan</CTAButton>
+        <CTAButton gtmEvent="signup-qard-hassan" href="/qard-hassan">
+          Sign up for qard hasan
+        </CTAButton>
       </div>
     </>
   );

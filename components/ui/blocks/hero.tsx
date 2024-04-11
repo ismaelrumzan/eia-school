@@ -30,7 +30,9 @@ export function Hero({ block }: { block: HeroType }): JSX.Element {
         <div className="text-[14px] sm:text-[16px] mb-1">{block.tagline}</div>
       </div>
       <div className="flex justify-center px-3 sm:px-0 pb-3">
-        <CTAButton href={block.ctabutton.href}>
+        <CTAButton
+          gtmEvent={`${block.ctabutton.text}_hero`}
+          href={block.ctabutton.href}>
           {block.ctabutton.text}
         </CTAButton>
       </div>

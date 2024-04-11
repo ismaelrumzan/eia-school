@@ -11,16 +11,10 @@ export function NavButton({
   href: string;
 }): JSX.Element {
   return (
-    <Button
-      asChild
-      className="font-bebas text-[#094931] text-[20px] uppercase bg-[#C6BB79] hover:bg-[#DED6A5]">
-      <Link
-        href={href}
-        onClick={() =>
-          sendGTMEvent({ event: "buttonClicked", value: "topnav-donate" })
-        }>
+    <Link href={href} onClick={() => sendGTMEvent({ event: "topnav-donate" })}>
+      <Button className="drop-shadow bg-[#C6BB79] font-bebas text-[#094931] text-[20px] uppercase hover:bg-[#DED6A5]">
         {children}
-      </Link>
-    </Button>
+      </Button>
+    </Link>
   );
 }

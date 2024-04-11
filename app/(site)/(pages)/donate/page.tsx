@@ -1,16 +1,15 @@
 import { DonationForm } from "@/components/ui/donation-form";
-import { ArrowLeft } from "lucide-react";
-import { NavButton } from "@/components/ui/buttons/nav-button";
+import { ContactAlert } from "@/components/ui/contact-alert";
+import { H1 } from "@/components/ui/typography/h1";
 
 export default function Page() {
   return (
-    <>
-      <div className="pl-3 mb-3">
-        <NavButton href="/">
-          <ArrowLeft />
-        </NavButton>
+    <div className="pb-4">
+      <H1 className="my-3">Donate</H1>
+      <div className="mb-2">
+        <ContactAlert />
       </div>
       <DonationForm />
-    </>
+    </div>
   );
 }
