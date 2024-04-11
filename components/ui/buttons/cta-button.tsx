@@ -21,9 +21,7 @@ export function CTAButton({
       disabled={disabled}
       asChild
       className="drop-shadow bg-[#C6BB79] font-bebas text-[#094931] text-[20px] uppercase w-full sm:w-fit hover:bg-[#DED6A5]"
-      onClick={() =>
-        sendGTMEvent({ event: "buttonClicked", value: { gtmEvent } })
-      }>
+      onClick={() => sendGTMEvent({ event: { gtmEvent } })}>
       <Link href={href} target={target}>
         {children}
       </Link>
