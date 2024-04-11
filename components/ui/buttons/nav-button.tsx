@@ -1,3 +1,5 @@
+"use client";
+import { sendGTMEvent } from "@next/third-parties/google";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
@@ -9,10 +11,14 @@ export function NavButton({
   href: string;
 }): JSX.Element {
   return (
-    <Link href={href}>
-      <Button
-        className="drop-shadow bg-[#C6BB79] font-bebas text-[#094931] text-[20px] uppercase hover:bg-[#DED6A5]">
+    <Link
+      href={href}
+      onClick={() =>
+        sendGTMEvent({ event: "buttonClicked", value: "topnav-donate" })
+      }>
+      <Button className="drop-shadow bg-[#C6BB79] font-bebas text-[#094931] text-[20px] uppercase hover:bg-[#DED6A5]">
         {children}
-      </Button></Link>
+      </Button>
+    </Link>
   );
 }

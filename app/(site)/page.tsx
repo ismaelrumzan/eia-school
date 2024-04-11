@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Carousel } from "flowbite-react";
-import { HelpCircle } from "lucide-react"
+import { HelpCircle } from "lucide-react";
 import { VideoPlayer } from "@/components/ui/iframe-video";
 import { H1, H1_light } from "@/components/ui/typography/h1";
 import { H2, H2_light } from "@/components/ui/typography/h2";
@@ -44,18 +44,26 @@ export default function Page() {
       <div className="p-4">
         <div className="flex justify-center items-center gap-2">
           <HelpCircle className="text-[#C6BB79]" />
-          <Link href="/faq" className="underline hover:no-underline"><H2 className="text-center">
-            Check out our FAQs
-          </H2></Link>
+          <Link href="/faq" className="underline hover:no-underline">
+            <H2 className="text-center">Check out our FAQs</H2>
+          </Link>
         </div>
-        <div className="text-center">Explore the most frequently asked questions from our community. </div>
+        <div className="text-center">
+          Explore the most frequently asked questions from our community.{" "}
+        </div>
       </div>
       <div
         id="about"
         className="py-4 px-2 flex flex-col border-t border-[#094931] items-center">
         <H1 className="text-center">About the project</H1>
-        <div className="text-center max-w-4xl py-2">Our school combines premier academic standards with a foundation in Islamic values. Designed exclusively for elementary-aged children, we&apos;re dedicated to meeting the growing needs of our community.</div>
-        <div className="text-center italic font-semibold">Opening 2026 inshaAllah, with your support</div>
+        <div className="text-center max-w-4xl py-2">
+          Our school combines premier academic standards with a foundation in
+          Islamic values. Designed exclusively for elementary-aged children,
+          we&apos;re dedicated to meeting the growing needs of our community.
+        </div>
+        <div className="text-center italic font-semibold">
+          Opening 2026 inshaAllah, with your support
+        </div>
         <div className="grid grid-cols-4 gap-4 lg:gap-x-20 my-4 max-w-4xl">
           <AboutItem src="/about-01.png" text="1700+ students" />
           <AboutItem src="/about-02.png" text="70,000+ square feet" />

@@ -1,4 +1,4 @@
-import Script from "next/script";
+import { GoogleTagManager } from "@next/third-parties/google";
 import Link from "next/link";
 import Image from "next/image";
 import { Flowbite } from "flowbite-react";
