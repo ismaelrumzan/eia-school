@@ -66,7 +66,7 @@ export default function Page() {
         <div className="text-center italic font-semibold">
           Opening 2026 inshaAllah, with your support
         </div>
-        <div className="grid grid-cols-4 gap-4 lg:gap-x-20 my-4 max-w-4xl">
+        <div className="grid grid-cols-3 gap-4 lg:gap-x-20 my-4 max-w-4xl">
           <AboutItem src="/about-01.png" text="1700+ students" />
           <AboutItem src="/about-03.png" text="76 classrooms" />
           <AboutItem src="/about-04.png" text="2 prayer halls" />
