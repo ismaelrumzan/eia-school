@@ -68,11 +68,9 @@ export default function Page() {
         </div>
         <div className="grid grid-cols-4 gap-4 lg:gap-x-20 my-4 max-w-4xl">
           <AboutItem src="/about-01.png" text="1700+ students" />
-          <AboutItem src="/about-02.png" text="70,000+ square feet" />
           <AboutItem src="/about-03.png" text="76 classrooms" />
           <AboutItem src="/about-04.png" text="2 prayer halls" />
           <AboutItem src="/about-05.png" text="2 gyms" />
-          <AboutItem src="/about-06.png" text="Cafeteria" />
           <AboutItem src="/about-07.png" text="5 Learning Centers" />
           <AboutItem src="/about-08.png" text="Playground & field" />
         </div>
